@@ -10,6 +10,7 @@
 		BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */; };
 		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E5F1FCD6A700091471D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BA5219DB1FCD691600F835C9 /* ZaloraJupiterCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloraJupiterCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraJupiterCoreTests.swift; sourceTree = "<group>"; };
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA971E5F1FCD6A700091471D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,8 @@
 		BA5219D41FCD691600F835C9 /* ZaloraJupiterCore */ = {
 			isa = PBXGroup;
 			children = (
+				BA971E5C1FCD6A4C0091471D /* Share */,
+				BA971E5D1FCD6A530091471D /* Source */,
 				BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */,
 				BA5219D61FCD691600F835C9 /* Info.plist */,
 			);
@@ -84,6 +88,29 @@
 				BA5219E21FCD691600F835C9 /* Info.plist */,
 			);
 			path = ZaloraJupiterCoreTests;
+			sourceTree = "<group>";
+		};
+		BA971E5C1FCD6A4C0091471D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		BA971E5D1FCD6A530091471D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BA971E5E1FCD6A5D0091471D /* View Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BA971E5E1FCD6A5D0091471D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA971E5F1FCD6A700091471D /* HomeViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +175,7 @@
 				TargetAttributes = {
 					BA5219D11FCD691600F835C9 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BA5219DA1FCD691600F835C9 = {
@@ -196,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +363,7 @@
 		BA5219E71FCD691600F835C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fe.ZaloraJupiterCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +385,7 @@
 		BA5219E81FCD691600F835C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +406,7 @@
 		BA5219EA1FCD691600F835C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZaloraJupiterCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +420,7 @@
 		BA5219EB1FCD691600F835C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZaloraJupiterCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
