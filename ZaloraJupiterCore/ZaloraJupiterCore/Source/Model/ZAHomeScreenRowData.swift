@@ -31,3 +31,11 @@ public class ZAHomeScreenRowData {
         self.uuid = UUID().uuidString
     }
 }
+
+extension ZAHomeScreenRowData: Equatable {
+    public static func ==(lhs: ZAHomeScreenRowData, rhs: ZAHomeScreenRowData) -> Bool {
+        return lhs.endpoint == rhs.endpoint &&
+            lhs.products.count == rhs.products.count &&
+            lhs.teasers.count == rhs.teasers.count
+    }
+}

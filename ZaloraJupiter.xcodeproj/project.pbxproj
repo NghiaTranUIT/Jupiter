@@ -16,7 +16,7 @@
 		BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA971E561FCD69D70091471D /* HomeViewController.xib */; };
 		BAA4774E1FCE674300DDAFF5 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4774C1FCE674300DDAFF5 /* IGListKit.framework */; };
 		BAA4774F1FCE674300DDAFF5 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4774D1FCE674300DDAFF5 /* SideMenu.framework */; };
-		BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */; };
+		BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift */; };
 		BAA477691FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */; };
 		BAA4776B1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */; };
 		BAA477701FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4776E1FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift */; };
@@ -65,7 +65,7 @@
 		BA971E561FCD69D70091471D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BAA4774C1FCE674300DDAFF5 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = Carthage/Build/iOS/IGListKit.framework; sourceTree = "<group>"; };
 		BAA4774D1FCE674300DDAFF5 /* SideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SideMenu.framework; path = Carthage/Build/iOS/SideMenu.framework; sourceTree = "<group>"; };
-		BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRowData.swift; sourceTree = "<group>"; };
+		BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreenRowData+ListDiffable.swift"; sourceTree = "<group>"; };
 		BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserSectionController.swift; sourceTree = "<group>"; };
 		BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductSectionController.swift; sourceTree = "<group>"; };
 		BAA4776E1FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserViewCell.swift; sourceTree = "<group>"; };
@@ -197,6 +197,7 @@
 		BA971E541FCD69AE0091471D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BA98001F1FCECDF3003FC0D6 /* Extension */,
 				BAA4777B1FCE9F0A00DDAFF5 /* Row Cells */,
 				BAA477761FCE9EA100DDAFF5 /* Header */,
 				BAA477611FCE8C2C00DDAFF5 /* Adapter */,
@@ -204,7 +205,6 @@
 				BAA477511FCE6E4800DDAFF5 /* Sections */,
 				BA971E551FCD69D70091471D /* HomeViewController.swift */,
 				BA971E561FCD69D70091471D /* HomeViewController.xib */,
-				BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -236,6 +236,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA98001F1FCECDF3003FC0D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		BAA477511FCE6E4800DDAFF5 /* Sections */ = {
@@ -483,7 +491,7 @@
 				BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */,
 				BAA477701FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift in Sources */,
 				BAA477691FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift in Sources */,
-				BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData.swift in Sources */,
+				BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

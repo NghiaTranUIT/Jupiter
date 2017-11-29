@@ -32,10 +32,8 @@ class HomeViewController: UIViewController {
         viewModel.tracking.trackHomeOpen()
         
         // Fetch
-        viewModel.input.loadProduct(completion: { [unowned self] in
-            self.collectionView.reloadData()
-        }) { [unowned self] in
-            self.collectionView.reloadData()
+        viewModel.input.loadProduct { [unowned self] in
+            self.adapter.reloadData(completion: nil)
         }
         
         SideMenuManager.defaultManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view, forMenu: UIRectEdge.left)
@@ -43,7 +41,6 @@ class HomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 }
 

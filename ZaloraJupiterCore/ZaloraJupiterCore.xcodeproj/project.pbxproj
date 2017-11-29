@@ -15,6 +15,9 @@
 		BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E661FCE5ACA0091471D /* PDVViewModel.swift */; };
 		BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E681FCE5AD20091471D /* SearchViewModel.swift */; };
 		BA971E6B1FCE5AD90091471D /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */; };
+		BA9800231FCECF16003FC0D6 /* TrackingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */; };
+		BA9800261FCECF8D003FC0D6 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800251FCECF8D003FC0D6 /* NetworkProtocols.swift */; };
+		BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */; };
 		BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */; };
 		BAA4775F1FCE750F00DDAFF5 /* AdjustTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4775E1FCE750F00DDAFF5 /* AdjustTracker.swift */; };
 		BAA477631FCE910500DDAFF5 /* ZAHomeScreenRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477621FCE910500DDAFF5 /* ZAHomeScreenRowData.swift */; };
@@ -51,6 +54,9 @@
 		BA971E661FCE5ACA0091471D /* PDVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewModel.swift; sourceTree = "<group>"; };
 		BA971E681FCE5AD20091471D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingProtocols.swift; sourceTree = "<group>"; };
+		BA9800251FCECF8D003FC0D6 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTMTracker.swift; sourceTree = "<group>"; };
 		BAA4775E1FCE750F00DDAFF5 /* AdjustTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustTracker.swift; sourceTree = "<group>"; };
 		BAA477621FCE910500DDAFF5 /* ZAHomeScreenRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAHomeScreenRowData.swift; sourceTree = "<group>"; };
@@ -116,6 +122,7 @@
 		BA5219DF1FCD691600F835C9 /* ZaloraJupiterCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA9800271FCED021003FC0D6 /* View Models */,
 				BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */,
 				BA5219E21FCD691600F835C9 /* Info.plist */,
 			);
@@ -162,9 +169,41 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		BA9800201FCECEA2003FC0D6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		BA9800211FCECF00003FC0D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA9800241FCECF7F003FC0D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA9800251FCECF8D003FC0D6 /* NetworkProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA9800271FCED021003FC0D6 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		BAA4775B1FCE745000DDAFF5 /* Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				BA9800211FCECF00003FC0D6 /* Protocols */,
 				BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */,
 				BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */,
 				BAA4775E1FCE750F00DDAFF5 /* AdjustTracker.swift */,
@@ -175,6 +214,8 @@
 		BAA477601FCE899400DDAFF5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BA9800241FCECF7F003FC0D6 /* Protocols */,
+				BA9800201FCECEA2003FC0D6 /* Request */,
 				BAD7D6941FCE5D76006D8557 /* NetworkService.swift */,
 			);
 			path = Network;
@@ -312,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9800231FCECF16003FC0D6 /* TrackingProtocols.swift in Sources */,
 				BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */,
 				BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */,
 				BAD7D69A1FCE5DA1006D8557 /* ZAProduct.swift in Sources */,
@@ -326,6 +368,7 @@
 				BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */,
 				BAD7D6981FCE5D8C006D8557 /* ZABaseModel.swift in Sources */,
 				BAD7D69F1FCE60AD006D8557 /* AppViewModel.swift in Sources */,
+				BA9800261FCECF8D003FC0D6 /* NetworkProtocols.swift in Sources */,
 				BAD7D69C1FCE5F2B006D8557 /* SideMenuViewModel.swift in Sources */,
 				BAD7D6951FCE5D76006D8557 /* NetworkService.swift in Sources */,
 				BAA4778D1FCEA84600DDAFF5 /* MenuViewModel.swift in Sources */,
@@ -337,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */,
+				BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

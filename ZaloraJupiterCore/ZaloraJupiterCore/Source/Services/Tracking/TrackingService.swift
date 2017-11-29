@@ -8,22 +8,7 @@
 
 import Foundation
 
-public protocol HomeTracking {
-    
-    func trackHomeOpen()
-    func trackClickBrand()
-    func trackClickCatagory()
-}
-
-public protocol MenuTracking {
-    
-    func trackSelectButton()
-    func trackLogout()
-}
-
-protocol TrackingServiceProtocol {
-    
-}
+protocol TrackingServiceProtocol {}
 
 class TrackingService: TrackingServiceProtocol {
     
@@ -57,10 +42,10 @@ extension TrackingService: HomeTracking {
 
 extension TrackingService: MenuTracking {
     func trackSelectButton() {
-        
+        gtm.trackSelectButton()
     }
     
     func trackLogout() {
-        
+        gtm.trackLogout()
     }
 }

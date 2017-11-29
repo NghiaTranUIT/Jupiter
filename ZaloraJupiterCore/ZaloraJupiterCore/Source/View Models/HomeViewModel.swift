@@ -19,7 +19,7 @@ public protocol HomeViewModelProtocol {
 
 public protocol HomeViewModelInput {
     
-    func loadProduct(completion: EmptyBlock, fail: EmptyBlock)
+    func loadProduct(_ completion: EmptyBlock)
 }
 
 public protocol HomeViewModelOutput {
@@ -49,8 +49,11 @@ public class HomeViewModel: HomeViewModelType {
         self.networkService = networkService
     }
     
-    public func loadProduct(completion: EmptyBlock, fail: EmptyBlock) {
-         networkService.fetchHomeProduct(completion: completion, fail: fail)
+    public func loadProduct(_ completion: EmptyBlock) {
+        networkService.fetchHomeProduct {[unowned self] (rows) in
+            self.homeScreenRows = rows
+            completion()
+        }
     }
 }
 

@@ -12,22 +12,13 @@ protocol NetworkServiceProtocol {
     
 }
 
-protocol NetworkServiceHome {
-    
-    func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock)
-}
-
-protocol NetworkServiceMenu {
-    func fetchMenu(_ completion: EmptyBlock)
-}
-
 class NetworkService: NetworkServiceProtocol {
     
 }
 
 extension NetworkService: NetworkServiceHome {
     
-    func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock) {
+    func fetchHomeProduct(_ completion: ([ZAHomeScreenRowData]) -> Void) {
         
     }
 }
