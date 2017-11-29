@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ZaloraJupiterCore/ZaloraJupiterCore.xcodeproj">
+      location = "group:ZaloraJupiter.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ZaloraJupiter.xcodeproj">
+      location = "group:ZaloraJupiterCore/ZaloraJupiterCore.xcodeproj">
    </FileRef>
 </Workspace>

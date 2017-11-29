@@ -1,0 +1,2 @@
+github "jonkykong/SideMenu" "master"
+github "Instagram/IGListKit" ~> 3.0
