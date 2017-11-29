@@ -11,6 +11,16 @@
 		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E5F1FCD6A700091471D /* HomeViewModel.swift */; };
+		BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */; };
+		BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E661FCE5ACA0091471D /* PDVViewModel.swift */; };
+		BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E681FCE5AD20091471D /* SearchViewModel.swift */; };
+		BA971E6B1FCE5AD90091471D /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */; };
+		BAD7D6921FCE5D5D006D8557 /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */; };
+		BAD7D6951FCE5D76006D8557 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6941FCE5D76006D8557 /* NetworkService.swift */; };
+		BAD7D6981FCE5D8C006D8557 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6971FCE5D8C006D8557 /* BaseModel.swift */; };
+		BAD7D69A1FCE5DA1006D8557 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6991FCE5DA1006D8557 /* Product.swift */; };
+		BAD7D69C1FCE5F2B006D8557 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D69B1FCE5F2B006D8557 /* SideMenuViewModel.swift */; };
+		BAD7D69F1FCE60AD006D8557 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D69E1FCE60AD006D8557 /* AppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +41,16 @@
 		BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraJupiterCoreTests.swift; sourceTree = "<group>"; };
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA971E5F1FCD6A700091471D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCoordinator.swift; sourceTree = "<group>"; };
+		BA971E661FCE5ACA0091471D /* PDVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewModel.swift; sourceTree = "<group>"; };
+		BA971E681FCE5AD20091471D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
+		BAD7D6941FCE5D76006D8557 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BAD7D6971FCE5D8C006D8557 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BAD7D6991FCE5DA1006D8557 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BAD7D69B1FCE5F2B006D8557 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		BAD7D69E1FCE60AD006D8557 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +120,9 @@
 		BA971E5D1FCD6A530091471D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BAD7D6961FCE5D7A006D8557 /* Model */,
+				BAD7D6901FCE5D4E006D8557 /* Services */,
+				BA971E631FCE5AB60091471D /* Coordinator */,
 				BA971E5E1FCD6A5D0091471D /* View Models */,
 			);
 			path = Source;
@@ -108,9 +131,40 @@
 		BA971E5E1FCD6A5D0091471D /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				BAD7D69E1FCE60AD006D8557 /* AppViewModel.swift */,
 				BA971E5F1FCD6A700091471D /* HomeViewModel.swift */,
+				BA971E661FCE5ACA0091471D /* PDVViewModel.swift */,
+				BA971E681FCE5AD20091471D /* SearchViewModel.swift */,
+				BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */,
+				BAD7D69B1FCE5F2B006D8557 /* SideMenuViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BA971E631FCE5AB60091471D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BAD7D6901FCE5D4E006D8557 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */,
+				BAD7D6941FCE5D76006D8557 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAD7D6961FCE5D7A006D8557 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6971FCE5D8C006D8557 /* BaseModel.swift */,
+				BAD7D6991FCE5DA1006D8557 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +279,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */,
+				BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */,
+				BAD7D69A1FCE5DA1006D8557 /* Product.swift in Sources */,
+				BA971E6B1FCE5AD90091471D /* CatalogViewModel.swift in Sources */,
+				BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */,
+				BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */,
+				BAD7D6921FCE5D5D006D8557 /* TrackingService.swift in Sources */,
+				BAD7D6981FCE5D8C006D8557 /* BaseModel.swift in Sources */,
+				BAD7D69F1FCE60AD006D8557 /* AppViewModel.swift in Sources */,
+				BAD7D69C1FCE5F2B006D8557 /* SideMenuViewModel.swift in Sources */,
+				BAD7D6951FCE5D76006D8557 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

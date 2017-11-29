@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HomeViewModelType {
+protocol HomeViewModelProtocol {
     
     var input: HomeViewModelInput { get }
     var output: HomeViewModelOutput { get }
@@ -22,6 +22,15 @@ protocol HomeViewModelOutput {
     
 }
 
-class HomeViewModel {
+typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput
+
+class HomeViewModel: HomeViewModelType {
     
+    // MARK: View model
+    var input: HomeViewModelInput { return self }
+    var output: HomeViewModelOutput { return self }
+    
+    init() {
+        
+    }
 }

@@ -15,6 +15,13 @@
 		BA971E4E1FCD69620091471D /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA971E4F1FCD69620091471D /* ZaloraJupiterCore.framework */; };
 		BA971E571FCD69D70091471D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E551FCD69D70091471D /* HomeViewController.swift */; };
 		BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA971E561FCD69D70091471D /* HomeViewController.xib */; };
+		BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A11FCE6222006D8557 /* Router.swift */; };
+		BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */; };
+		BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */; };
+		BAD7D6AC1FCE6255006D8557 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6AA1FCE6255006D8557 /* SearchViewController.swift */; };
+		BAD7D6AD1FCE6255006D8557 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7D6AB1FCE6255006D8557 /* SearchViewController.xib */; };
+		BAD7D6B11FCE6262006D8557 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6AF1FCE6262006D8557 /* CatalogViewController.swift */; };
+		BAD7D6B21FCE6262006D8557 /* CatalogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7D6B01FCE6262006D8557 /* CatalogViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		BA971E4F1FCD69620091471D /* ZaloraJupiterCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZaloraJupiterCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA971E551FCD69D70091471D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA971E561FCD69D70091471D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		BAD7D6A11FCE6222006D8557 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewController.swift; sourceTree = "<group>"; };
+		BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDVViewController.xib; sourceTree = "<group>"; };
+		BAD7D6AA1FCE6255006D8557 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BAD7D6AB1FCE6255006D8557 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		BAD7D6AF1FCE6262006D8557 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		BAD7D6B01FCE6262006D8557 /* CatalogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +169,9 @@
 		BA971E591FCD69E50091471D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BAD7D6AE1FCE6257006D8557 /* Catalog */,
+				BAD7D6A91FCE6245006D8557 /* Search */,
+				BAD7D69D1FCE6097006D8557 /* PDV */,
 				BA971E541FCD69AE0091471D /* Home */,
 			);
 			path = Scenes;
@@ -163,6 +180,7 @@
 		BA971E5A1FCD69F30091471D /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				BAD7D6A01FCE621A006D8557 /* Router */,
 				BA971E5B1FCD69F80091471D /* Extensions */,
 			);
 			path = Share;
@@ -173,6 +191,41 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAD7D69D1FCE6097006D8557 /* PDV */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */,
+				BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */,
+			);
+			path = PDV;
+			sourceTree = "<group>";
+		};
+		BAD7D6A01FCE621A006D8557 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6A11FCE6222006D8557 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BAD7D6A91FCE6245006D8557 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6AA1FCE6255006D8557 /* SearchViewController.swift */,
+				BAD7D6AB1FCE6255006D8557 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BAD7D6AE1FCE6257006D8557 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				BAD7D6AF1FCE6262006D8557 /* CatalogViewController.swift */,
+				BAD7D6B01FCE6262006D8557 /* CatalogViewController.xib */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5219861FCD684800F835C9 /* LaunchScreen.storyboard in Resources */,
+				BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */,
+				BAD7D6AD1FCE6255006D8557 /* SearchViewController.xib in Resources */,
+				BAD7D6B21FCE6262006D8557 /* CatalogViewController.xib in Resources */,
 				BA5219831FCD684800F835C9 /* Assets.xcassets in Resources */,
 				BA5219811FCD684800F835C9 /* Main.storyboard in Resources */,
 				BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */,
@@ -279,8 +335,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD7D6B11FCE6262006D8557 /* CatalogViewController.swift in Sources */,
+				BAD7D6AC1FCE6255006D8557 /* SearchViewController.swift in Sources */,
 				BA52197C1FCD684800F835C9 /* AppDelegate.swift in Sources */,
+				BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */,
 				BA971E571FCD69D70091471D /* HomeViewController.swift in Sources */,
+				BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
