@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public class Product {
+    
+    let name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}

@@ -8,29 +8,62 @@
 
 import Foundation
 
-protocol HomeViewModelProtocol {
+public protocol HomeViewModelProtocol {
     
     var input: HomeViewModelInput { get }
     var output: HomeViewModelOutput { get }
+    var tracking: HomeTracking { get }
 }
 
-protocol HomeViewModelInput {
+public protocol HomeViewModelInput {
     
+    func loadProduct()
 }
 
-protocol HomeViewModelOutput {
+public protocol HomeViewModelOutput {
     
+    var products: [Product] { get }
 }
 
-typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput
+public typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput & HomeTracking
 
-class HomeViewModel: HomeViewModelType {
+public class HomeViewModel: HomeViewModelType {
     
     // MARK: View model
-    var input: HomeViewModelInput { return self }
-    var output: HomeViewModelOutput { return self }
+    public var input: HomeViewModelInput { return self }
+    public var output: HomeViewModelOutput { return self }
+    public var tracking: HomeTracking { return self }
     
-    init() {
-        
+    // MARK: Output
+    public var products: [Product] = []
+    
+    // MARK: Variable
+    private let trackingService: TrackingServiceType & HomeTracking
+    private let networkService: NetworkServiceProtocol & NetworkServiceHome
+    
+    init(trackingService: TrackingServiceType & HomeTracking,
+         networkService: NetworkServiceProtocol & NetworkServiceHome) {
+        self.trackingService = trackingService
+        self.networkService = networkService
+    }
+    
+    public func loadProduct() {
+         networkService.fetchHomeProduct()
+    }
+}
+
+// MARK: Tracking
+extension HomeViewModel {
+    
+    public func trackHomeOpen() {
+        trackingService.trackHomeOpen()
+    }
+    
+    public func trackClickBrand() {
+        trackingService.trackClickBrand()
+    }
+    
+    public func trackClickCatagory() {
+        trackingService.trackClickCatagory()
     }
 }

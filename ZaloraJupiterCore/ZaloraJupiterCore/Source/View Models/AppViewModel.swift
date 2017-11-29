@@ -9,13 +9,13 @@
 import Foundation
 
 
-protocol AppViewModelProtocol {
+public protocol AppViewModelProtocol {
     
     var input: AppViewModelInput { get }
     var output: AppViewModelOutput { get }
 }
 
-protocol AppViewModelInput {
+public protocol AppViewModelInput {
     
     func appDidLaunch(with options: [UIApplicationLaunchOptionsKey: Any]?)
     func applicationDidEnterBackground()
@@ -24,40 +24,40 @@ protocol AppViewModelInput {
     func application(open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool
 }
 
-protocol AppViewModelOutput {
+public protocol AppViewModelOutput {
     
 }
 
-typealias AppViewModelType = AppViewModelProtocol & AppViewModelInput & AppViewModelOutput
+public typealias AppViewModelType = AppViewModelProtocol & AppViewModelInput & AppViewModelOutput
 
-class AppViewModel: AppViewModelType {
+public class AppViewModel: AppViewModelType {
     
     // MARK: View model
-    var input: AppViewModelInput { return self }
-    var output: AppViewModelOutput { return self }
+    public var input: AppViewModelInput { return self }
+    public var output: AppViewModelOutput { return self }
     
     init() {
         
     }
     
     // MARK: Input
-    func appDidLaunch(with options: [UIApplicationLaunchOptionsKey: Any]?) {
+    public func appDidLaunch(with options: [UIApplicationLaunchOptionsKey: Any]?) {
         
     }
     
-    func applicationDidEnterBackground() {
+    public func applicationDidEnterBackground() {
         
     }
     
-    func applicationWillEnterForeground() {
+    public func applicationWillEnterForeground() {
         
     }
     
-    func applicationDidBecomeActive() {
+    public func applicationDidBecomeActive() {
         
     }
     
-    func application(open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+    public func application(open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
         return true
     }
 }

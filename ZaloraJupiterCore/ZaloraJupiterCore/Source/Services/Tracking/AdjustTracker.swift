@@ -1,5 +1,5 @@
 //
-//  GeneralTracking.swift
+//  AdjustTracker.swift
 //  ZaloraJupiterCore
 //
 //  Created by NghiaTran on 11/29/17.
@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+protocol AdjustTrackerType {
+    
+}
+
+class AdjustTracker : AdjustTrackerType {
+    
+}
