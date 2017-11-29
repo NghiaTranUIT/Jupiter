@@ -40,10 +40,10 @@ public class HomeViewModel: HomeViewModelType {
     public var homeScreenRows: [ZAHomeScreenRowData] = []
     
     // MARK: Variable
-    private let trackingService: TrackingServiceType & HomeTracking
+    private let trackingService: TrackingServiceProtocol & HomeTracking
     private let networkService: NetworkServiceProtocol & NetworkServiceHome
     
-    init(trackingService: TrackingServiceType & HomeTracking,
+    init(trackingService: TrackingServiceProtocol & HomeTracking,
          networkService: NetworkServiceProtocol & NetworkServiceHome) {
         self.trackingService = trackingService
         self.networkService = networkService

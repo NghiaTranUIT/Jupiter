@@ -12,6 +12,7 @@ public protocol ViewModelCoordinatorType: class {
     
     var appViewModel: AppViewModelType { get }
     var homeViewModel: HomeViewModelType { get }
+    var menuViewModel: MenuViewModelType { get }
 }
 
 public class ViewModelCoordinator: ViewModelCoordinatorType {
@@ -19,25 +20,34 @@ public class ViewModelCoordinator: ViewModelCoordinatorType {
     // MARK: View model
     public let appViewModel: AppViewModelType
     public let homeViewModel: HomeViewModelType
+    public let menuViewModel: MenuViewModelType
     
     // MARK: Init
     init(appViewModel: AppViewModelType,
-         homeViewModel: HomeViewModelType) {
+         homeViewModel: HomeViewModelType,
+         menuViewModel: MenuViewModelType) {
         self.appViewModel = appViewModel
         self.homeViewModel = homeViewModel
+        self.menuViewModel = menuViewModel
     }
 }
 
 extension ViewModelCoordinator {
     
     public class func defaultApp() -> ViewModelCoordinatorType {
+        // Services
         let tracking = TrackingService()
         let network = NetworkService()
         
+        // View Modesl
         let app = AppViewModel()
         let home = HomeViewModel(trackingService: tracking,
                                  networkService: network)
+        let menu = MenuViewModel(trackingService: tracking,
+                                 networkService: network)
+        
         return ViewModelCoordinator(appViewModel: app,
-                                    homeViewModel: home)
+                                    homeViewModel: home,
+                                    menuViewModel: menu)
     }
 }

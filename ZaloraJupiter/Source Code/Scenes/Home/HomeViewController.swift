@@ -9,6 +9,7 @@
 import UIKit
 import ZaloraJupiterCore
 import IGListKit
+import SideMenu
 
 class HomeViewController: UIViewController {
 
@@ -36,6 +37,8 @@ class HomeViewController: UIViewController {
         }) { [unowned self] in
             self.collectionView.reloadData()
         }
+        
+        SideMenuManager.defaultManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view, forMenu: UIRectEdge.left)
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,6 +17,10 @@ protocol NetworkServiceHome {
     func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock)
 }
 
+protocol NetworkServiceMenu {
+    func fetchMenu(_ completion: EmptyBlock)
+}
+
 class NetworkService: NetworkServiceProtocol {
     
 }
@@ -24,6 +28,12 @@ class NetworkService: NetworkServiceProtocol {
 extension NetworkService: NetworkServiceHome {
     
     func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock) {
+        
+    }
+}
+
+extension NetworkService: NetworkServiceMenu {
+    func fetchMenu(_ completion: () -> Void) {
         
     }
 }

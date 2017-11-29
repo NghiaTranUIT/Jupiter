@@ -15,6 +15,7 @@ enum RouterType {
     case home
     case pdv
     case catalog
+    case menu
 }
 
 class Router {
@@ -25,6 +26,7 @@ class Router {
     // MARK: Init
     init(coordinator: ViewModelCoordinatorType) {
         self.coordinator = coordinator
+        setupSideMenu()
     }
     
     // MARK: Public
@@ -45,19 +47,24 @@ extension Router {
     fileprivate func controllerForRouter(type: RouterType) -> UIViewController {
         switch type {
         case .home:
-            
-            // Get from XIB
             let controller = HomeViewController(nibName: "HomeViewController", bundle: nil)
-            
-            // Wire view model
             controller.viewModel = coordinator.homeViewModel
             
             // Attach to UINavigationController
             let navigation = UINavigationController(rootViewController: controller)
             return navigation
             
+        case .menu:
+            let controller = MenuViewController(nibName: "MenuViewController", bundle: nil)
+            return controller
+            
         default: // Didn't support yet
             return UIViewController()
         }
+    }
+    
+    fileprivate func setupSideMenu() {
+        let home = UISideMenuNavigationController(rootViewController: controllerForRouter(type: .menu))
+        SideMenuManager.defaultManager.menuLeftNavigationController = home
     }
 }

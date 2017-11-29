@@ -15,11 +15,17 @@ public protocol HomeTracking {
     func trackClickCatagory()
 }
 
-protocol TrackingServiceType {
+public protocol MenuTracking {
+    
+    func trackSelectButton()
+    func trackLogout()
+}
+
+protocol TrackingServiceProtocol {
     
 }
 
-class TrackingService: TrackingServiceType {
+class TrackingService: TrackingServiceProtocol {
     
     private let gtm: GTMTrackerType
     private let adjust: AdjustTrackerType
@@ -46,5 +52,15 @@ extension TrackingService: HomeTracking {
     
     public func trackClickCatagory() {
         gtm.trackClickCatagory()
+    }
+}
+
+extension TrackingService: MenuTracking {
+    func trackSelectButton() {
+        
+    }
+    
+    func trackLogout() {
+        
     }
 }
