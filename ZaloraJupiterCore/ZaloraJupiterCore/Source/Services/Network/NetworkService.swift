@@ -14,7 +14,7 @@ protocol NetworkServiceProtocol {
 
 protocol NetworkServiceHome {
     
-    func fetchHomeProduct()
+    func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock)
 }
 
 class NetworkService: NetworkServiceProtocol {
@@ -23,7 +23,7 @@ class NetworkService: NetworkServiceProtocol {
 
 extension NetworkService: NetworkServiceHome {
     
-    func fetchHomeProduct() {
+    func fetchHomeProduct(completion: EmptyBlock, fail: EmptyBlock) {
         
     }
 }

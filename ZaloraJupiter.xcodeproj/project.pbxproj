@@ -16,9 +16,19 @@
 		BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA971E561FCD69D70091471D /* HomeViewController.xib */; };
 		BAA4774E1FCE674300DDAFF5 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4774C1FCE674300DDAFF5 /* IGListKit.framework */; };
 		BAA4774F1FCE674300DDAFF5 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4774D1FCE674300DDAFF5 /* SideMenu.framework */; };
-		BAA477531FCE6EE100DDAFF5 /* HomeBannerSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477521FCE6EE100DDAFF5 /* HomeBannerSectionController.swift */; };
-		BAA477551FCE6EEF00DDAFF5 /* HomeJustForYouSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477541FCE6EEF00DDAFF5 /* HomeJustForYouSectionController.swift */; };
-		BAA477571FCE700D00DDAFF5 /* HomeTrendingSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477561FCE700D00DDAFF5 /* HomeTrendingSectionController.swift */; };
+		BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */; };
+		BAA477691FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */; };
+		BAA4776B1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */; };
+		BAA477701FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4776E1FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift */; };
+		BAA477711FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA4776F1FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib */; };
+		BAA477741FCE9E9300DDAFF5 /* HomeProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477721FCE9E9300DDAFF5 /* HomeProductViewCell.swift */; };
+		BAA477751FCE9E9300DDAFF5 /* HomeProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477731FCE9E9300DDAFF5 /* HomeProductViewCell.xib */; };
+		BAA477791FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477771FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift */; };
+		BAA4777A1FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477781FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib */; };
+		BAA4777E1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */; };
+		BAA4777F1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */; };
+		BAA477821FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */; };
+		BAA477831FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */; };
 		BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A11FCE6222006D8557 /* Router.swift */; };
 		BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */; };
 		BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */; };
@@ -52,9 +62,19 @@
 		BA971E561FCD69D70091471D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BAA4774C1FCE674300DDAFF5 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = Carthage/Build/iOS/IGListKit.framework; sourceTree = "<group>"; };
 		BAA4774D1FCE674300DDAFF5 /* SideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SideMenu.framework; path = Carthage/Build/iOS/SideMenu.framework; sourceTree = "<group>"; };
-		BAA477521FCE6EE100DDAFF5 /* HomeBannerSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerSectionController.swift; sourceTree = "<group>"; };
-		BAA477541FCE6EEF00DDAFF5 /* HomeJustForYouSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeJustForYouSectionController.swift; sourceTree = "<group>"; };
-		BAA477561FCE700D00DDAFF5 /* HomeTrendingSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTrendingSectionController.swift; sourceTree = "<group>"; };
+		BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRowData.swift; sourceTree = "<group>"; };
+		BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserSectionController.swift; sourceTree = "<group>"; };
+		BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductSectionController.swift; sourceTree = "<group>"; };
+		BAA4776E1FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserViewCell.swift; sourceTree = "<group>"; };
+		BAA4776F1FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTeaserViewCell.xib; sourceTree = "<group>"; };
+		BAA477721FCE9E9300DDAFF5 /* HomeProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductViewCell.swift; sourceTree = "<group>"; };
+		BAA477731FCE9E9300DDAFF5 /* HomeProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductViewCell.xib; sourceTree = "<group>"; };
+		BAA477771FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
+		BAA477781FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
+		BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserRowViewCell.swift; sourceTree = "<group>"; };
+		BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTeaserRowViewCell.xib; sourceTree = "<group>"; };
+		BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductRowViewCell.swift; sourceTree = "<group>"; };
+		BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductRowViewCell.xib; sourceTree = "<group>"; };
 		BAD7D6A11FCE6222006D8557 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewController.swift; sourceTree = "<group>"; };
 		BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDVViewController.xib; sourceTree = "<group>"; };
@@ -171,11 +191,14 @@
 		BA971E541FCD69AE0091471D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BAA4777B1FCE9F0A00DDAFF5 /* Row Cells */,
+				BAA477761FCE9EA100DDAFF5 /* Header */,
 				BAA477611FCE8C2C00DDAFF5 /* Adapter */,
 				BAA477581FCE701500DDAFF5 /* Cells */,
 				BAA477511FCE6E4800DDAFF5 /* Sections */,
 				BA971E551FCD69D70091471D /* HomeViewController.swift */,
 				BA971E561FCD69D70091471D /* HomeViewController.xib */,
+				BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -210,9 +233,8 @@
 		BAA477511FCE6E4800DDAFF5 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				BAA477521FCE6EE100DDAFF5 /* HomeBannerSectionController.swift */,
-				BAA477541FCE6EEF00DDAFF5 /* HomeJustForYouSectionController.swift */,
-				BAA477561FCE700D00DDAFF5 /* HomeTrendingSectionController.swift */,
+				BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */,
+				BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -220,6 +242,10 @@
 		BAA477581FCE701500DDAFF5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BAA4776E1FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift */,
+				BAA4776F1FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib */,
+				BAA477721FCE9E9300DDAFF5 /* HomeProductViewCell.swift */,
+				BAA477731FCE9E9300DDAFF5 /* HomeProductViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -229,6 +255,26 @@
 			children = (
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		BAA477761FCE9EA100DDAFF5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BAA477771FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift */,
+				BAA477781FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		BAA4777B1FCE9F0A00DDAFF5 /* Row Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */,
+				BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */,
+				BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */,
+				BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */,
+			);
+			path = "Row Cells";
 			sourceTree = "<group>";
 		};
 		BAD7D69D1FCE6097006D8557 /* PDV */ = {
@@ -352,8 +398,13 @@
 			files = (
 				BA5219861FCD684800F835C9 /* LaunchScreen.storyboard in Resources */,
 				BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */,
+				BAA477711FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib in Resources */,
 				BAD7D6AD1FCE6255006D8557 /* SearchViewController.xib in Resources */,
+				BAA477831FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib in Resources */,
+				BAA4777A1FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib in Resources */,
 				BAD7D6B21FCE6262006D8557 /* CatalogViewController.xib in Resources */,
+				BAA4777F1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib in Resources */,
+				BAA477751FCE9E9300DDAFF5 /* HomeProductViewCell.xib in Resources */,
 				BA5219831FCD684800F835C9 /* Assets.xcassets in Resources */,
 				BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */,
 			);
@@ -391,15 +442,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA477531FCE6EE100DDAFF5 /* HomeBannerSectionController.swift in Sources */,
-				BAA477571FCE700D00DDAFF5 /* HomeTrendingSectionController.swift in Sources */,
+				BAA4777E1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift in Sources */,
 				BAD7D6B11FCE6262006D8557 /* CatalogViewController.swift in Sources */,
 				BAD7D6AC1FCE6255006D8557 /* SearchViewController.swift in Sources */,
 				BA52197C1FCD684800F835C9 /* AppDelegate.swift in Sources */,
-				BAA477551FCE6EEF00DDAFF5 /* HomeJustForYouSectionController.swift in Sources */,
+				BAA477791FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift in Sources */,
 				BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */,
+				BAA477821FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift in Sources */,
+				BAA477741FCE9E9300DDAFF5 /* HomeProductViewCell.swift in Sources */,
 				BA971E571FCD69D70091471D /* HomeViewController.swift in Sources */,
+				BAA4776B1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift in Sources */,
 				BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */,
+				BAA477701FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift in Sources */,
+				BAA477691FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift in Sources */,
+				BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

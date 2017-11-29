@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias EmptyBlock = () -> Void
+
 public protocol HomeViewModelProtocol {
     
     var input: HomeViewModelInput { get }
@@ -17,12 +19,12 @@ public protocol HomeViewModelProtocol {
 
 public protocol HomeViewModelInput {
     
-    func loadProduct()
+    func loadProduct(completion: EmptyBlock, fail: EmptyBlock)
 }
 
 public protocol HomeViewModelOutput {
     
-    var products: [Product] { get }
+    var homeScreenRows: [ZAHomeScreenRowData] { get }
 }
 
 public typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput & HomeTracking
@@ -35,7 +37,7 @@ public class HomeViewModel: HomeViewModelType {
     public var tracking: HomeTracking { return self }
     
     // MARK: Output
-    public var products: [Product] = []
+    public var homeScreenRows: [ZAHomeScreenRowData] = []
     
     // MARK: Variable
     private let trackingService: TrackingServiceType & HomeTracking
@@ -47,8 +49,8 @@ public class HomeViewModel: HomeViewModelType {
         self.networkService = networkService
     }
     
-    public func loadProduct() {
-         networkService.fetchHomeProduct()
+    public func loadProduct(completion: EmptyBlock, fail: EmptyBlock) {
+         networkService.fetchHomeProduct(completion: completion, fail: fail)
     }
 }
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Product {
+public class ZAProduct {
     
     let name: String
     

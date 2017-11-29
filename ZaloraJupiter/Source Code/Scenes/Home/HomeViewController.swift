@@ -31,7 +31,11 @@ class HomeViewController: UIViewController {
         viewModel.tracking.trackHomeOpen()
         
         // Fetch
-        viewModel.input.loadProduct()
+        viewModel.input.loadProduct(completion: { [unowned self] in
+            self.collectionView.reloadData()
+        }) { [unowned self] in
+            self.collectionView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,11 +47,17 @@ class HomeViewController: UIViewController {
 extension HomeViewController: ListAdapterDataSource {
     
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        
+        return viewModel.output.homeScreenRows
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        
+        let rowData = object as! ZAHomeScreenRowData
+        switch rowData.type {
+        case .DataJet:
+            return HomeProductSectionController()
+        case .Teaser:
+            return HomeTeaserSectionController()
+        }
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
