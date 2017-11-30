@@ -27,7 +27,7 @@ class Router {
     func initMainWindow() -> UIWindow {
         
         // Warp
-        let controller = controllerForRouter(type: .home)
+        let controller = controllerForRouter(type: .home(nil))
         navigationController.viewControllers = [controller]
         
         let window = UIWindow(frame: UIScreen.main.bounds)
@@ -39,8 +39,11 @@ class Router {
     // MARK: Private
     private func binding() {
         self.coordinator.appViewModel.output.handleURLSchemeCallback = {[unowned self] scheme in
-            let router = scheme.urlType.toRouter()
-            guard router != .none else { return }
+            
+            // Create router with scheme
+            let router = RouterType(scheme: scheme)
+            
+            // Create and push
             let controller = self.controllerForRouter(type: router)
             self.pushViewController(controller)
         }
@@ -63,18 +66,24 @@ extension Router {
             let controller = HomeViewController(nibName: "HomeViewController", bundle: nil)
             controller.viewModel = coordinator.homeViewModel
             return controller
+        
+        case .catalog(let scheme):
+            let controller = CatalogViewController(nibName: "CatalogViewController", bundle: nil)
+            controller.viewModel = coordinator.catalogViewModel
+            controller.scheme = scheme
+            return controller
             
         case .menu:
             let controller = MenuViewController(nibName: "MenuViewController", bundle: nil)
             return controller
             
         default: // Didn't support yet
-            return UIViewController()
+            fatalError()
         }
     }
     
     fileprivate func setupSideMenu() {
-        let home = UISideMenuNavigationController(rootViewController: controllerForRouter(type: .menu))
+        let home = UISideMenuNavigationController(rootViewController: controllerForRouter(type: .menu(nil)))
         SideMenuManager.defaultManager.menuLeftNavigationController = home
     }
 }

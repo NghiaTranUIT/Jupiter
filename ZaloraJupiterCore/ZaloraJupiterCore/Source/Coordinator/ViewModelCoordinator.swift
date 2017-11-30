@@ -13,6 +13,7 @@ public protocol ViewModelCoordinatorType: class {
     var appViewModel: AppViewModelType { get }
     var homeViewModel: HomeViewModelType { get }
     var menuViewModel: MenuViewModelType { get }
+    var catalogViewModel: CatalogViewModelType { get }
 }
 
 public class ViewModelCoordinator: ViewModelCoordinatorType {
@@ -28,6 +29,9 @@ public class ViewModelCoordinator: ViewModelCoordinatorType {
     public var menuViewModel: MenuViewModelType {
         return MenuViewModel(trackingService: self.trackingService,
                              networkService: self.networkService)
+    }
+    public var catalogViewModel: CatalogViewModelType {
+        return CatalogViewModel()
     }
     
     // MARK: Services

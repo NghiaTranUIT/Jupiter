@@ -11,23 +11,23 @@ import ZaloraJupiterCore
 
 enum RouterType {
     
-    case home
-    case pdv
-    case catalog
-    case menu
+    case home(DeepURLScheme?)
+    case pdv(DeepURLScheme?)
+    case catalog(DeepURLScheme?)
+    case menu(DeepURLScheme?)
     case none
-}
-
-extension DeepURLSchemeRoute {
     
-    func toRouter() -> RouterType {
-        switch self {
+    init(scheme: DeepURLScheme) {
+        switch scheme.urlType {
         case .catalog:
-            return .catalog
+            self = .catalog(scheme)
+            break
         case .home:
-            return .home
+            self = .home(scheme)
+            break
         case .none:
-            return .none
+            self = .none
+            break
         }
     }
 }
