@@ -41,14 +41,14 @@ public class AppViewModel: AppViewModelType {
     
     // MARK: Service
     fileprivate let trackingService: TrackingServiceProtocol & TrackingServiceActivity
-    fileprivate let urlService: DeepURLServiceProtocol
+    fileprivate let urlService: DeepURLServiceType
     
     // MARK: Output
     public var handleURLSchemeCallback: ((DeepURLScheme) -> Void)!
     
     // MARK: Init
     init(trackingService: TrackingServiceProtocol & TrackingServiceActivity,
-         urlService: DeepURLServiceProtocol) {
+         urlService: DeepURLServiceType) {
         self.trackingService = trackingService
         self.urlService = urlService
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum DeepURLSchemeType {
+public enum DeepURLSchemeRoute {
     
     case home
     case catalog

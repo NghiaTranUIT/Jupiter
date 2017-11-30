@@ -18,7 +18,7 @@ enum RouterType {
     case none
 }
 
-extension DeepURLSchemeType {
+extension DeepURLSchemeRoute {
     
     func toRouter() -> RouterType {
         switch self {

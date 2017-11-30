@@ -17,5 +17,5 @@ public struct DeepURLScheme {
     public let type: String
     public let segment: String
     public let shop: String
-    public let urlType: DeepURLSchemeType
+    public let urlType: DeepURLSchemeRoute
 }

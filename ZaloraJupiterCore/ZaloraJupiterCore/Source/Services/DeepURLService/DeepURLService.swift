@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol DeepURLServiceProtocol {
+protocol DeepURLServiceType {
     
     func handle(_ rawURL: String) -> DeepURLScheme
 }
 
-class DeepURLService: DeepURLServiceProtocol {
+class DeepURLService: DeepURLServiceType {
     
     // MARK: Variable
     private let parser: DeepURLParserType

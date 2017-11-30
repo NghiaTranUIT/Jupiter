@@ -10,7 +10,9 @@ import Foundation
 
 protocol TrackingServiceProtocol {}
 
-class TrackingService: TrackingServiceProtocol {
+typealias TrackingServiceType = TrackingServiceProtocol & TrackingServiceHome & TrackingServiceMenu & TrackingServiceActivity
+
+class TrackingService: TrackingServiceType {
     
     private let gtm: GTMTrackerType
     private let adjust: AdjustTrackerType
@@ -25,7 +27,7 @@ class TrackingService: TrackingServiceProtocol {
     }
 }
 
-extension TrackingService: TrackingServiceHome {
+extension TrackingService {
     
     public func trackHomeOpen() {
         gtm.trackHomeOpen()
@@ -40,7 +42,7 @@ extension TrackingService: TrackingServiceHome {
     }
 }
 
-extension TrackingService: TrackingServiceMenu {
+extension TrackingService {
     func trackSelectButton() {
         gtm.trackSelectButton()
     }
@@ -50,7 +52,7 @@ extension TrackingService: TrackingServiceMenu {
     }
 }
 
-extension TrackingService: TrackingServiceActivity {
+extension TrackingService {
     
     func trackHideApp() {
         

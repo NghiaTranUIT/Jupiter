@@ -18,20 +18,32 @@ public protocol ViewModelCoordinatorType: class {
 public class ViewModelCoordinator: ViewModelCoordinatorType {
    
     // MARK: View model
-    public let appViewModel: AppViewModelType
-    public let homeViewModel: HomeViewModelType
-    public let menuViewModel: MenuViewModelType
+    public var appViewModel: AppViewModelType {
+        return AppViewModel(trackingService: self.trackingService, urlService: self.deepURLService)
+    }
+    public var homeViewModel: HomeViewModelType {
+        return HomeViewModel(trackingService: self.trackingService,
+                             networkService: self.networkService)
+    }
+    public var menuViewModel: MenuViewModelType {
+        return MenuViewModel(trackingService: self.trackingService,
+                             networkService: self.networkService)
+    }
+    
+    // MARK: Services
+    fileprivate let trackingService: TrackingServiceType
+    fileprivate let networkService: NetworkServiceType
+    fileprivate let deepURLService: DeepURLServiceType
     
     // MARK: Init
-    init(appViewModel: AppViewModelType,
-         homeViewModel: HomeViewModelType,
-         menuViewModel: MenuViewModelType) {
-        self.appViewModel = appViewModel
-        self.homeViewModel = homeViewModel
-        self.menuViewModel = menuViewModel
+    init(trackingService: TrackingServiceType, networkService: NetworkServiceType, deepURLService: DeepURLServiceType) {
+        self.trackingService = trackingService
+        self.networkService = networkService
+        self.deepURLService = deepURLService
     }
 }
 
+// MARK: Default
 extension ViewModelCoordinator {
     
     public class func defaultApp() -> ViewModelCoordinatorType {
@@ -41,15 +53,8 @@ extension ViewModelCoordinator {
         let network = NetworkService()
         let deepURL = DeepURLService.default()
         
-        // View Modesl
-        let app = AppViewModel(trackingService: tracking, urlService: deepURL)
-        let home = HomeViewModel(trackingService: tracking,
-                                 networkService: network)
-        let menu = MenuViewModel(trackingService: tracking,
-                                 networkService: network)
-        
-        return ViewModelCoordinator(appViewModel: app,
-                                    homeViewModel: home,
-                                    menuViewModel: menu)
+        return ViewModelCoordinator(trackingService: tracking,
+                                    networkService: network,
+                                    deepURLService: deepURL)
     }
 }

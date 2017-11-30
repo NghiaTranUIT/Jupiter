@@ -8,22 +8,22 @@
 
 import Foundation
 
-protocol NetworkServiceProtocol {
+protocol NetworkServiceProtocol {}
+
+typealias NetworkServiceType = NetworkServiceProtocol & NetworkServiceHome & NetworkServiceMenu
+
+class NetworkService: NetworkServiceType {
     
 }
 
-class NetworkService: NetworkServiceProtocol {
-    
-}
-
-extension NetworkService: NetworkServiceHome {
+extension NetworkService {
     
     func fetchHomeProduct(_ completion: ([ZAHomeScreenRowData]) -> Void) {
         
     }
 }
 
-extension NetworkService: NetworkServiceMenu {
+extension NetworkService {
     func fetchMenu(_ completion: () -> Void) {
         
     }
