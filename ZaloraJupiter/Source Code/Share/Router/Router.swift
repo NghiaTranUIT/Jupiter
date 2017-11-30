@@ -10,18 +10,11 @@ import UIKit
 import ZaloraJupiterCore
 import SideMenu
 
-enum RouterType {
-    
-    case home
-    case pdv
-    case catalog
-    case menu
-}
-
 class Router {
     
     // MARK: Private
     private unowned let coordinator: ViewModelCoordinatorType
+    private let navigationController = UINavigationController()
     
     // MARK: Init
     init(coordinator: ViewModelCoordinatorType) {
@@ -31,17 +24,29 @@ class Router {
     
     // MARK: Public
     func initMainWindow() -> UIWindow {
+        
+        // Warp
+        let controller = controllerForRouter(type: .home)
+        navigationController.viewControllers = [controller]
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = controllerForRouter(type: .home)
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         return window
     }
     
     // MARK: Private
     private func binding() {
-        self.coordinator.appViewModel.output.handleURLSchemeCallback = { scheme in
-            
+        self.coordinator.appViewModel.output.handleURLSchemeCallback = {[unowned self] scheme in
+            let router = scheme.urlType.toRouter()
+            guard router != .none else { return }
+            let controller = self.controllerForRouter(type: router)
+            self.pushViewController(controller)
         }
+    }
+    
+    private func pushViewController(_ viewController: UIViewController) {
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 
@@ -56,10 +61,7 @@ extension Router {
         case .home:
             let controller = HomeViewController(nibName: "HomeViewController", bundle: nil)
             controller.viewModel = coordinator.homeViewModel
-            
-            // Attach to UINavigationController
-            let navigation = UINavigationController(rootViewController: controller)
-            return navigation
+            return controller
             
         case .menu:
             let controller = MenuViewController(nibName: "MenuViewController", bundle: nil)

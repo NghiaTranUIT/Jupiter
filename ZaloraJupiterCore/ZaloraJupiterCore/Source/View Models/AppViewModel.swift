@@ -9,14 +9,14 @@
 import Foundation
 
 
-public protocol AppViewModelProtocol {
+public protocol AppViewModelProtocol: class {
     
     var input: AppViewModelInput { get }
     var output: AppViewModelOutput { get }
     var tracking: TrackingServiceActivity { get }
 }
 
-public protocol AppViewModelInput {
+public protocol AppViewModelInput: class {
     
     func appDidLaunch(with options: [UIApplicationLaunchOptionsKey: Any]?)
     func applicationDidEnterBackground()
@@ -25,7 +25,7 @@ public protocol AppViewModelInput {
     func application(open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool
 }
 
-public protocol AppViewModelOutput {
+public protocol AppViewModelOutput: class {
     
     var handleURLSchemeCallback: ((DeepURLScheme) -> Void)! { get set }
 }

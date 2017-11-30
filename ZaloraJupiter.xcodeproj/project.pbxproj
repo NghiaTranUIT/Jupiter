@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA50F45F1FD0023200A5D3F5 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50F45E1FD0023200A5D3F5 /* RouterType.swift */; };
 		BA52197C1FCD684800F835C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52197B1FCD684800F835C9 /* AppDelegate.swift */; };
 		BA5219831FCD684800F835C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5219821FCD684800F835C9 /* Assets.xcassets */; };
 		BA5219861FCD684800F835C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5219841FCD684800F835C9 /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA50F45E1FD0023200A5D3F5 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
 		BA5219781FCD684800F835C9 /* ZaloraJupiter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZaloraJupiter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA52197B1FCD684800F835C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5219821FCD684800F835C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD7D6A11FCE6222006D8557 /* Router.swift */,
+				BA50F45E1FD0023200A5D3F5 /* RouterType.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				BAA477861FCEA5A800DDAFF5 /* RootViewController.swift in Sources */,
 				BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */,
 				BAA4778A1FCEA6C000DDAFF5 /* MenuViewController.swift in Sources */,
+				BA50F45F1FD0023200A5D3F5 /* RouterType.swift in Sources */,
 				BAA477821FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift in Sources */,
 				BAA477741FCE9E9300DDAFF5 /* HomeProductViewCell.swift in Sources */,
 				BA971E571FCD69D70091471D /* HomeViewController.swift in Sources */,

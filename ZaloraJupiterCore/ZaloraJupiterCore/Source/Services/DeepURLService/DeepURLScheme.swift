@@ -12,10 +12,10 @@ import Foundation
 
 public struct DeepURLScheme {
     
-    let country: String
-    let gender: String
-    let type: String
-    let segment: String
-    let shop: String
-    let urlType: DeepURLSchemeType
+    public let country: String
+    public let gender: String
+    public let type: String
+    public let segment: String
+    public let shop: String
+    public let urlType: DeepURLSchemeType
 }
