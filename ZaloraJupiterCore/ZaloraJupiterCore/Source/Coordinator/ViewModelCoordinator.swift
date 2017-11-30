@@ -35,12 +35,14 @@ public class ViewModelCoordinator: ViewModelCoordinatorType {
 extension ViewModelCoordinator {
     
     public class func defaultApp() -> ViewModelCoordinatorType {
+        
         // Services
         let tracking = TrackingService()
         let network = NetworkService()
+        let deepURL = DeepURLService.default()
         
         // View Modesl
-        let app = AppViewModel()
+        let app = AppViewModel(trackingService: tracking, urlService: deepURL)
         let home = HomeViewModel(trackingService: tracking,
                                  networkService: network)
         let menu = MenuViewModel(trackingService: tracking,

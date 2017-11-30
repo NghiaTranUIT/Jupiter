@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import ZaloraJupiterCore
 
 class CatalogViewController: UIViewController {
 
+    // MARK: Variable
+    var viewModel: CatalogViewModelType!
+    var scheme: DeepURLScheme?
+    
+    // MARK: View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }

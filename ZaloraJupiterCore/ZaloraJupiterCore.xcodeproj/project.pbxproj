@@ -10,6 +10,10 @@
 		BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */; };
 		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5847331FCFDBCA005BB113 /* DeepURLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847321FCFDBCA005BB113 /* DeepURLService.swift */; };
+		BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */; };
+		BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */; };
+		BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */; };
 		BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E5F1FCD6A700091471D /* HomeViewModel.swift */; };
 		BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */; };
 		BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E661FCE5ACA0091471D /* PDVViewModel.swift */; };
@@ -49,6 +53,10 @@
 		BA5219DB1FCD691600F835C9 /* ZaloraJupiterCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloraJupiterCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraJupiterCoreTests.swift; sourceTree = "<group>"; };
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5847321FCFDBCA005BB113 /* DeepURLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLService.swift; sourceTree = "<group>"; };
+		BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLScheme.swift; sourceTree = "<group>"; };
+		BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLSchemeType.swift; sourceTree = "<group>"; };
+		BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLParser.swift; sourceTree = "<group>"; };
 		BA971E5F1FCD6A700091471D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCoordinator.swift; sourceTree = "<group>"; };
 		BA971E661FCE5ACA0091471D /* PDVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewModel.swift; sourceTree = "<group>"; };
@@ -127,6 +135,17 @@
 				BA5219E21FCD691600F835C9 /* Info.plist */,
 			);
 			path = ZaloraJupiterCoreTests;
+			sourceTree = "<group>";
+		};
+		BA58472F1FCFDBAA005BB113 /* DeepURLService */ = {
+			isa = PBXGroup;
+			children = (
+				BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */,
+				BA5847321FCFDBCA005BB113 /* DeepURLService.swift */,
+				BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */,
+				BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */,
+			);
+			path = DeepURLService;
 			sourceTree = "<group>";
 		};
 		BA971E5C1FCD6A4C0091471D /* Share */ = {
@@ -224,6 +243,7 @@
 		BAD7D6901FCE5D4E006D8557 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BA58472F1FCFDBAA005BB113 /* DeepURLService */,
 				BAA477601FCE899400DDAFF5 /* Network */,
 				BAA4775B1FCE745000DDAFF5 /* Tracking */,
 			);
@@ -353,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */,
 				BA9800231FCECF16003FC0D6 /* TrackingProtocols.swift in Sources */,
 				BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */,
 				BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */,
@@ -360,9 +381,12 @@
 				BA971E6B1FCE5AD90091471D /* CatalogViewModel.swift in Sources */,
 				BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */,
 				BAA477631FCE910500DDAFF5 /* ZAHomeScreenRowData.swift in Sources */,
+				BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */,
 				BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */,
 				BAD7D6921FCE5D5D006D8557 /* TrackingService.swift in Sources */,
+				BA5847331FCFDBCA005BB113 /* DeepURLService.swift in Sources */,
 				BAA477651FCE921300DDAFF5 /* ZATeaser.swift in Sources */,
+				BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */,
 				BAA4775F1FCE750F00DDAFF5 /* AdjustTracker.swift in Sources */,
 				BAA477911FCEAA1600DDAFF5 /* ZAMenuData.swift in Sources */,
 				BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */,

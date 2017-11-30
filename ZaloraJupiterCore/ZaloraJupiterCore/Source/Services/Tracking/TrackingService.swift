@@ -49,3 +49,14 @@ extension TrackingService: TrackingServiceMenu {
         gtm.trackLogout()
     }
 }
+
+extension TrackingService: TrackingServiceActivity {
+    
+    func trackHideApp() {
+        
+    }
+    
+    func trackOpenApp() {
+        
+    }
+}

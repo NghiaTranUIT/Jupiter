@@ -36,6 +36,13 @@ class Router {
         window.makeKeyAndVisible()
         return window
     }
+    
+    // MARK: Private
+    private func binding() {
+        self.coordinator.appViewModel.output.handleURLSchemeCallback = { scheme in
+            
+        }
+    }
 }
 
 extension Router {

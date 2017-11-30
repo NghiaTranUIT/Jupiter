@@ -20,3 +20,9 @@ public protocol TrackingServiceMenu {
     func trackSelectButton()
     func trackLogout()
 }
+
+public protocol TrackingServiceActivity {
+    
+    func trackOpenApp()
+    func trackHideApp()
+}
