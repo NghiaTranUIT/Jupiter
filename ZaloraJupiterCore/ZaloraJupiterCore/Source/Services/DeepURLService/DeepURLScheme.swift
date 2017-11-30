@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Zalora://sg/urlc_s/m/products/?segment=women&shop=m"
+// Zalora://sg/urlc_s/m/products/?segment=women&shop=m
 
 public struct DeepURLScheme {
     

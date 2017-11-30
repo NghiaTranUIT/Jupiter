@@ -20,6 +20,7 @@ class Router {
     init(coordinator: ViewModelCoordinatorType) {
         self.coordinator = coordinator
         setupSideMenu()
+        binding()
     }
     
     // MARK: Public

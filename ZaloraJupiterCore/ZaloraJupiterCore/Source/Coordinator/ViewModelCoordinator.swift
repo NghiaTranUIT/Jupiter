@@ -18,9 +18,9 @@ public protocol ViewModelCoordinatorType: class {
 public class ViewModelCoordinator: ViewModelCoordinatorType {
    
     // MARK: View model
-    public var appViewModel: AppViewModelType {
+    public lazy var appViewModel: AppViewModelType = {
         return AppViewModel(trackingService: self.trackingService, urlService: self.deepURLService)
-    }
+    }()
     public var homeViewModel: HomeViewModelType {
         return HomeViewModel(trackingService: self.trackingService,
                              networkService: self.networkService)
