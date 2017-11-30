@@ -10,13 +10,13 @@ import Foundation
 
 protocol GTMTrackerProtocol {}
 
-typealias GTMTrackerType = GTMTrackerProtocol & HomeTracking & MenuTracking
+typealias GTMTrackerType = GTMTrackerProtocol & TrackingServiceHome & TrackingServiceMenu
 
 class GTMTracker: GTMTrackerType {
 
 }
 
-// MARK: HomeTracking
+// MARK: TrackingServiceHome
 extension GTMTracker {
     
     public func trackHomeOpen() {
@@ -32,7 +32,7 @@ extension GTMTracker {
     }
 }
 
-// MARK: MenuTracking
+// MARK: TrackingServiceMenu
 extension GTMTracker {
     
     func trackSelectButton() {

@@ -25,7 +25,7 @@ class TrackingService: TrackingServiceProtocol {
     }
 }
 
-extension TrackingService: HomeTracking {
+extension TrackingService: TrackingServiceHome {
     
     public func trackHomeOpen() {
         gtm.trackHomeOpen()
@@ -40,7 +40,7 @@ extension TrackingService: HomeTracking {
     }
 }
 
-extension TrackingService: MenuTracking {
+extension TrackingService: TrackingServiceMenu {
     func trackSelectButton() {
         gtm.trackSelectButton()
     }

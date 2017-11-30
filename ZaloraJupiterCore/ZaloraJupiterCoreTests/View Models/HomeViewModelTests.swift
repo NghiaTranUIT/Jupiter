@@ -18,7 +18,7 @@ struct StubNetworkService: NetworkServiceProtocol, NetworkServiceHome {
     }
 }
 
-struct EmptyTrackingService: TrackingServiceProtocol, HomeTracking {
+struct EmptyTrackingService: TrackingServiceProtocol, TrackingServiceHome {
     
     func trackHomeOpen() {}
     

@@ -8,14 +8,14 @@
 
 import Foundation
 
-public protocol HomeTracking {
+public protocol TrackingServiceHome {
     
     func trackHomeOpen()
     func trackClickBrand()
     func trackClickCatagory()
 }
 
-public protocol MenuTracking {
+public protocol TrackingServiceMenu {
     
     func trackSelectButton()
     func trackLogout()

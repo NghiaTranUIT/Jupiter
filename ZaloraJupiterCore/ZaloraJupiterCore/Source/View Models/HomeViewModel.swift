@@ -14,7 +14,7 @@ public protocol HomeViewModelProtocol {
     
     var input: HomeViewModelInput { get }
     var output: HomeViewModelOutput { get }
-    var tracking: HomeTracking { get }
+    var tracking: TrackingServiceHome { get }
 }
 
 public protocol HomeViewModelInput {
@@ -27,23 +27,24 @@ public protocol HomeViewModelOutput {
     var homeScreenRows: [ZAHomeScreenRowData] { get }
 }
 
-public typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput & HomeTracking
+public typealias HomeViewModelType = HomeViewModelProtocol & HomeViewModelInput & HomeViewModelOutput & TrackingServiceHome
 
 public class HomeViewModel: HomeViewModelType {
     
     // MARK: View model
     public var input: HomeViewModelInput { return self }
     public var output: HomeViewModelOutput { return self }
-    public var tracking: HomeTracking { return self }
+    public var tracking: TrackingServiceHome { return self }
     
     // MARK: Output
     public var homeScreenRows: [ZAHomeScreenRowData] = []
     
     // MARK: Variable
-    private let trackingService: TrackingServiceProtocol & HomeTracking
+    private let trackingService: TrackingServiceProtocol & TrackingServiceHome
     private let networkService: NetworkServiceProtocol & NetworkServiceHome
     
-    init(trackingService: TrackingServiceProtocol & HomeTracking,
+    // MARK: Init
+    init(trackingService: TrackingServiceProtocol & TrackingServiceHome,
          networkService: NetworkServiceProtocol & NetworkServiceHome) {
         self.trackingService = trackingService
         self.networkService = networkService

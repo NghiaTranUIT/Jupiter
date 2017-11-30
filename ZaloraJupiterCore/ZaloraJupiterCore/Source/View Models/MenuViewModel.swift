@@ -12,7 +12,7 @@ public protocol MenuViewModelProtocol {
     
     var input: MenuViewModelInput { get }
     var output: MenuViewModelOuput { get }
-    var tracking: MenuTracking { get }
+    var tracking: TrackingServiceMenu { get }
 }
 
 public protocol MenuViewModelInput {
@@ -24,24 +24,24 @@ public protocol MenuViewModelOuput {
     var menuDatas: [ZAMenuData] { get }
 }
 
-public  typealias MenuViewModelType = MenuViewModelProtocol & MenuViewModelInput & MenuViewModelOuput & MenuTracking
+public  typealias MenuViewModelType = MenuViewModelProtocol & MenuViewModelInput & MenuViewModelOuput & TrackingServiceMenu
 
 public class MenuViewModel: MenuViewModelType {
     
     // MARK: View Model
     public var input: MenuViewModelInput { return self }
     public var output: MenuViewModelOuput { return self }
-    public var tracking: MenuTracking { return self }
+    public var tracking: TrackingServiceMenu { return self }
     
     // MARK: Output
     public var menuDatas: [ZAMenuData] = []
     
     // MARK: Services
-    private let trackingService: TrackingServiceProtocol & MenuTracking
+    private let trackingService: TrackingServiceProtocol & TrackingServiceMenu
     private let networkService: NetworkServiceProtocol & NetworkServiceMenu
     
     // MARK: Init
-    init(trackingService: TrackingServiceProtocol & MenuTracking,
+    init(trackingService: TrackingServiceProtocol & TrackingServiceMenu,
          networkService: NetworkServiceProtocol & NetworkServiceMenu) {
         self.trackingService = trackingService
         self.networkService = networkService
