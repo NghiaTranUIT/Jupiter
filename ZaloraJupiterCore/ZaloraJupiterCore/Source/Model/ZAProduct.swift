@@ -10,8 +10,8 @@ import Unbox
 
 public class ZAProduct: Unboxable {
 
-    let name: String
-    let url: String
+    public let name: String
+    public let url: String
     
     init(name: String, url: String) {
         self.name = name

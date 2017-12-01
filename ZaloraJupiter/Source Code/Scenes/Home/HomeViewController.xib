@@ -31,21 +31,13 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-yG-Wzu">
-                    <rect key="frame" x="164" y="323" width="46" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M8v-Xk-kgv" secondAttribute="bottom" id="71K-4E-Og0"/>
-                <constraint firstItem="2ag-yG-Wzu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="DQW-gy-5k0"/>
                 <constraint firstItem="M8v-Xk-kgv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JQr-Hf-ULO"/>
                 <constraint firstAttribute="trailing" secondItem="M8v-Xk-kgv" secondAttribute="trailing" id="LtK-Wf-rbo"/>
                 <constraint firstItem="M8v-Xk-kgv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kCL-hQ-NEF"/>
-                <constraint firstItem="2ag-yG-Wzu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nV4-m6-cGj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

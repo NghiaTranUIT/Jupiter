@@ -10,9 +10,12 @@ import UIKit
 
 class HomeHeaderReusableView: UICollectionReusableView {
 
+    @IBOutlet weak var titleLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        backgroundColor = UIColor.black
     }
     
 }

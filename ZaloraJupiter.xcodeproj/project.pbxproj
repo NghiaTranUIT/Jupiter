@@ -26,13 +26,16 @@
 		BAA477751FCE9E9300DDAFF5 /* HomeProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477731FCE9E9300DDAFF5 /* HomeProductViewCell.xib */; };
 		BAA477791FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477771FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift */; };
 		BAA4777A1FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477781FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib */; };
-		BAA4777E1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */; };
-		BAA4777F1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */; };
-		BAA477821FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */; };
-		BAA477831FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */; };
 		BAA477861FCEA5A800DDAFF5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477851FCEA5A800DDAFF5 /* RootViewController.swift */; };
 		BAA4778A1FCEA6C000DDAFF5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477881FCEA6C000DDAFF5 /* MenuViewController.swift */; };
 		BAA4778B1FCEA6C000DDAFF5 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA477891FCEA6C000DDAFF5 /* MenuViewController.xib */; };
+		BABCEDF61FD1185400CE9F42 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDF51FD1185400CE9F42 /* UIColor+Hex.swift */; };
+		BABCEDFB1FD1265200CE9F42 /* HomeRowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDF91FD1265200CE9F42 /* HomeRowViewCell.swift */; };
+		BABCEDFC1FD1265200CE9F42 /* HomeRowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABCEDFA1FD1265200CE9F42 /* HomeRowViewCell.xib */; };
+		BABCEDFE1FD128D600CE9F42 /* HomeEmbeddedProductSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDFD1FD128D600CE9F42 /* HomeEmbeddedProductSectionController.swift */; };
+		BABCEE001FD1291500CE9F42 /* ZATeaser+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDFF1FD1291500CE9F42 /* ZATeaser+ListDiffable.swift */; };
+		BABCEE021FD1294900CE9F42 /* ZAProduct+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEE011FD1294900CE9F42 /* ZAProduct+ListDiffable.swift */; };
+		BABCEE041FD12A4200CE9F42 /* HomeEmbeddedTeaserSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEE031FD12A4200CE9F42 /* HomeEmbeddedTeaserSectionController.swift */; };
 		BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A11FCE6222006D8557 /* Router.swift */; };
 		BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */; };
 		BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */; };
@@ -76,13 +79,16 @@
 		BAA477731FCE9E9300DDAFF5 /* HomeProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductViewCell.xib; sourceTree = "<group>"; };
 		BAA477771FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
 		BAA477781FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
-		BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTeaserRowViewCell.swift; sourceTree = "<group>"; };
-		BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTeaserRowViewCell.xib; sourceTree = "<group>"; };
-		BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductRowViewCell.swift; sourceTree = "<group>"; };
-		BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductRowViewCell.xib; sourceTree = "<group>"; };
 		BAA477851FCEA5A800DDAFF5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		BAA477881FCEA6C000DDAFF5 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		BAA477891FCEA6C000DDAFF5 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		BABCEDF51FD1185400CE9F42 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		BABCEDF91FD1265200CE9F42 /* HomeRowViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRowViewCell.swift; sourceTree = "<group>"; };
+		BABCEDFA1FD1265200CE9F42 /* HomeRowViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRowViewCell.xib; sourceTree = "<group>"; };
+		BABCEDFD1FD128D600CE9F42 /* HomeEmbeddedProductSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmbeddedProductSectionController.swift; sourceTree = "<group>"; };
+		BABCEDFF1FD1291500CE9F42 /* ZATeaser+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZATeaser+ListDiffable.swift"; sourceTree = "<group>"; };
+		BABCEE011FD1294900CE9F42 /* ZAProduct+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZAProduct+ListDiffable.swift"; sourceTree = "<group>"; };
+		BABCEE031FD12A4200CE9F42 /* HomeEmbeddedTeaserSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmbeddedTeaserSectionController.swift; sourceTree = "<group>"; };
 		BAD7D6A11FCE6222006D8557 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BAD7D6A51FCE6241006D8557 /* PDVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewController.swift; sourceTree = "<group>"; };
 		BAD7D6A61FCE6241006D8557 /* PDVViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDVViewController.xib; sourceTree = "<group>"; };
@@ -202,7 +208,6 @@
 				BA98001F1FCECDF3003FC0D6 /* Extension */,
 				BAA4777B1FCE9F0A00DDAFF5 /* Row Cells */,
 				BAA477761FCE9EA100DDAFF5 /* Header */,
-				BAA477611FCE8C2C00DDAFF5 /* Adapter */,
 				BAA477581FCE701500DDAFF5 /* Cells */,
 				BAA477511FCE6E4800DDAFF5 /* Sections */,
 				BA971E551FCD69D70091471D /* HomeViewController.swift */,
@@ -236,6 +241,7 @@
 		BA971E5B1FCD69F80091471D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BABCEDF51FD1185400CE9F42 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				BAA477661FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift */,
+				BABCEDFF1FD1291500CE9F42 /* ZATeaser+ListDiffable.swift */,
+				BABCEE011FD1294900CE9F42 /* ZAProduct+ListDiffable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -253,6 +261,8 @@
 			children = (
 				BAA477681FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift */,
 				BAA4776A1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift */,
+				BABCEDFD1FD128D600CE9F42 /* HomeEmbeddedProductSectionController.swift */,
+				BABCEE031FD12A4200CE9F42 /* HomeEmbeddedTeaserSectionController.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -268,13 +278,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BAA477611FCE8C2C00DDAFF5 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
 		BAA477761FCE9EA100DDAFF5 /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,10 +290,8 @@
 		BAA4777B1FCE9F0A00DDAFF5 /* Row Cells */ = {
 			isa = PBXGroup;
 			children = (
-				BAA4777C1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift */,
-				BAA4777D1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib */,
-				BAA477801FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift */,
-				BAA477811FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib */,
+				BABCEDF91FD1265200CE9F42 /* HomeRowViewCell.swift */,
+				BABCEDFA1FD1265200CE9F42 /* HomeRowViewCell.xib */,
 			);
 			path = "Row Cells";
 			sourceTree = "<group>";
@@ -436,12 +437,11 @@
 				BAD7D6A81FCE6241006D8557 /* PDVViewController.xib in Resources */,
 				BAA477711FCE9E8300DDAFF5 /* HomeTeaserViewCell.xib in Resources */,
 				BAD7D6AD1FCE6255006D8557 /* SearchViewController.xib in Resources */,
-				BAA477831FCE9F4500DDAFF5 /* HomeProductRowViewCell.xib in Resources */,
 				BAA4777A1FCE9EB600DDAFF5 /* HomeHeaderReusableView.xib in Resources */,
 				BAD7D6B21FCE6262006D8557 /* CatalogViewController.xib in Resources */,
 				BAA4778B1FCEA6C000DDAFF5 /* MenuViewController.xib in Resources */,
-				BAA4777F1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.xib in Resources */,
 				BAA477751FCE9E9300DDAFF5 /* HomeProductViewCell.xib in Resources */,
+				BABCEDFC1FD1265200CE9F42 /* HomeRowViewCell.xib in Resources */,
 				BA5219831FCD684800F835C9 /* Assets.xcassets in Resources */,
 				BA971E581FCD69D70091471D /* HomeViewController.xib in Resources */,
 			);
@@ -479,21 +479,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA4777E1FCE9F2C00DDAFF5 /* HomeTeaserRowViewCell.swift in Sources */,
 				BAD7D6B11FCE6262006D8557 /* CatalogViewController.swift in Sources */,
 				BAD7D6AC1FCE6255006D8557 /* SearchViewController.swift in Sources */,
+				BABCEDF61FD1185400CE9F42 /* UIColor+Hex.swift in Sources */,
+				BABCEE041FD12A4200CE9F42 /* HomeEmbeddedTeaserSectionController.swift in Sources */,
 				BA52197C1FCD684800F835C9 /* AppDelegate.swift in Sources */,
 				BAA477791FCE9EB600DDAFF5 /* HomeHeaderReusableView.swift in Sources */,
 				BAA477861FCEA5A800DDAFF5 /* RootViewController.swift in Sources */,
 				BAD7D6A21FCE6222006D8557 /* Router.swift in Sources */,
 				BAA4778A1FCEA6C000DDAFF5 /* MenuViewController.swift in Sources */,
 				BA50F45F1FD0023200A5D3F5 /* RouterType.swift in Sources */,
-				BAA477821FCE9F4500DDAFF5 /* HomeProductRowViewCell.swift in Sources */,
 				BAA477741FCE9E9300DDAFF5 /* HomeProductViewCell.swift in Sources */,
+				BABCEDFE1FD128D600CE9F42 /* HomeEmbeddedProductSectionController.swift in Sources */,
+				BABCEE021FD1294900CE9F42 /* ZAProduct+ListDiffable.swift in Sources */,
 				BA971E571FCD69D70091471D /* HomeViewController.swift in Sources */,
 				BAA4776B1FCE9BFC00DDAFF5 /* HomeProductSectionController.swift in Sources */,
 				BAD7D6A71FCE6241006D8557 /* PDVViewController.swift in Sources */,
+				BABCEE001FD1291500CE9F42 /* ZATeaser+ListDiffable.swift in Sources */,
 				BAA477701FCE9E8300DDAFF5 /* HomeTeaserViewCell.swift in Sources */,
+				BABCEDFB1FD1265200CE9F42 /* HomeRowViewCell.swift in Sources */,
 				BAA477691FCE9BF000DDAFF5 /* HomeTeaserSectionController.swift in Sources */,
 				BAA477671FCE95DB00DDAFF5 /* HomeScreenRowData+ListDiffable.swift in Sources */,
 			);

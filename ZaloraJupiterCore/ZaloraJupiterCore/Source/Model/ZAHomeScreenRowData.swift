@@ -16,29 +16,21 @@ public class ZAHomeScreenRowData: Unboxable {
     }
     
     private let endpoint: String
-    private let param: [String: Any]
     public let uuid: String
     public let products: [ZAProduct]
     public let teasers: [ZATeaser]
+    public let title: String
     public var type: RowType {
         if products.count > 0 { return .DataJet }
         return .Teaser
     }
     
-    init(endpoint: String, param: [String: Any], products: [ZAProduct], teasers: [ZATeaser]) {
-        self.endpoint = endpoint
-        self.param = param
-        self.products = products
-        self.teasers = teasers
-        self.uuid = UUID().uuidString
-    }
-    
     public required init(unboxer: Unboxer) throws {
         self.endpoint = try unboxer.unbox(key: "endpoint")
-        self.param = try unboxer.unbox(key: "param")
         self.products = try unboxer.unbox(key: "products")
         self.teasers = try unboxer.unbox(key: "teasers")
         self.uuid = try unboxer.unbox(key: "uuid")
+        self.title = try unboxer.unbox(key: "title")
     }
 }
 

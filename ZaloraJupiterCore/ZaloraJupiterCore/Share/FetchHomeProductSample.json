@@ -1,0 +1,201 @@
+{
+    "data": [
+             {
+             "endpoint": "\"/zalora\/product",
+             "uuid": "1",
+             "title": "Best Seller",
+             "products": [
+                          {
+                          "name": "Product 1",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 2",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 3",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 4",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 5",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 6",
+                          "url": "url"
+                          }
+                          ],
+             "teasers": []
+             },
+             {
+             "endpoint": "\"/zalora\/teaser",
+             "uuid": "2",
+             "title": "Feature",
+             "products": [],
+             "teasers": [
+                         {
+                         "name": "Teaser 1",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 2",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 3",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 4",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 5",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 6",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 7",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 8",
+                         "url": "url"
+                         }
+                         ]
+             },
+             {
+             "endpoint": "\"/zalora\/teaser",
+             "uuid": "3",
+             "title": "Exclusive",
+             "products": [],
+             "teasers": [
+                         {
+                         "name": "Teaser 1",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 2",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 3",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 4",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 5",
+                         "url": "url"
+                         }
+                         ]
+             },
+             {
+             "endpoint": "\"/zalora\/product",
+             "uuid": "4",
+             "title": "Hot Deal",
+             "products": [
+                          {
+                          "name": "Product 1",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 2",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 3",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 4",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 5",
+                          "url": "url"
+                          }
+                          ],
+             "teasers": []
+             },
+             {
+             "endpoint": "\"/zalora\/product",
+             "uuid": "5",
+             "title": "Don't forget it",
+             "products": [
+                          {
+                          "name": "Product 1",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 2",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 3",
+                          "url": "url"
+                          },
+                          {
+                          "name": "Product 4",
+                          "url": "url"
+                          },
+                          
+                          {
+                          "name": "Product 5",
+                          "url": "url"
+                          }
+                          ],
+             "teasers": []
+             },
+             {
+             "endpoint": "\"/zalora\/teaser",
+             "uuid": "6",
+             "title": "Hot Trend",
+             "products": [],
+             "teasers": [
+                         {
+                         "name": "Teaser 1",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 2",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 3",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 4",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 5",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 6",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 7",
+                         "url": "url"
+                         },
+                         {
+                         "name": "Teaser 8",
+                         "url": "url"
+                         }
+                         ]
+             }
+             ]
+}

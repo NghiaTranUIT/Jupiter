@@ -8,14 +8,11 @@
 
 import Foundation
 
-protocol NetworkFetchable {
+class ZaloraAPIFetcher: NetworkFetchable {
     
-    func get<T>(_ request: AnyRequest<T>)
-}
-
-class NetworkFetcher: NetworkFetchable {
-    
-    func get<T>(_ request: AnyRequest<T>) {
+    func get<T>(_ request: AnyRequest<T>) -> T.Element {
         
+        // Reuse iOSNetworking - Zalora framework here
+        fatalError()
     }
 }

@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import ZaloraJupiterCore
 
 class HomeProductViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var nameLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    func config(_ product: ZAProduct) {
+        nameLbl.text = product.name
+        contentView.backgroundColor = UIColor(hexString: "#19B5FE")
+    }
+    
 }

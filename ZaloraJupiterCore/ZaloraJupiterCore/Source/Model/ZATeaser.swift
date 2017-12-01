@@ -10,8 +10,8 @@ import Unbox
 
 public class ZATeaser: Unboxable {
     
-    let name: String
-    let url: String
+    public let name: String
+    public let url: String
     
     init(name: String, url: String) {
         self.name = name
@@ -21,5 +21,12 @@ public class ZATeaser: Unboxable {
     public required init(unboxer: Unboxer) throws {
         self.name = try unboxer.unbox(key: "name")
         self.url = try unboxer.unbox(key: "url")
+    }
+}
+
+extension ZATeaser: Equatable {
+    
+    public static func ==(lhs: ZATeaser, rhs: ZATeaser) -> Bool {
+        return lhs.name == rhs.name && lhs.url == rhs.url
     }
 }

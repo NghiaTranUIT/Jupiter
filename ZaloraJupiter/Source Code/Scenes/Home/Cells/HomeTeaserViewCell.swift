@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import ZaloraJupiterCore
 
 class HomeTeaserViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var nameLbl: UILabel!
+    
+    func config(_ teaser: ZATeaser) {
+        nameLbl.text = teaser.name
+        contentView.backgroundColor = UIColor(hexString: "#8E44AD")
     }
-
 }

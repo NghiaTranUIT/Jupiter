@@ -14,6 +14,12 @@ import ZaloraJupiterCore
 class HomeProductSectionController: ListSectionController {
     
     private var rowData: ZAHomeScreenRowData!
+    private lazy var adapter: ListAdapter = {
+        let adapter = ListAdapter(updater: ListAdapterUpdater(),
+                                  viewController: self.viewController)
+        adapter.dataSource = self
+        return adapter
+    }()
     
     override init() {
         super.init()
@@ -21,17 +27,14 @@ class HomeProductSectionController: ListSectionController {
     }
     
     override func numberOfItems() -> Int {
-        return rowData.teasers.count
+        return 1
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "HomeProductRowViewCell", bundle: nil, for: self, at: index) as? HomeProductRowViewCell else {
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "HomeRowViewCell", bundle: nil, for: self, at: index) as? HomeRowViewCell else {
             fatalError()
         }
-        
-        let products = rowData.products
-        cell.configure(with: products)
-        
+        adapter.collectionView = cell.collectionView
         return cell
     }
     
@@ -51,14 +54,28 @@ extension HomeProductSectionController: ListSupplementaryViewSource {
     }
     
     func viewForSupplementaryElement(ofKind elementKind: String, at index: Int) -> UICollectionReusableView {
-        guard let header = collectionContext?.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, for: self, nibName: "HomeHeaderReusableView", bundle: nil, at: index) else {
+        guard let header = collectionContext?.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, for: self, nibName: "HomeHeaderReusableView", bundle: nil, at: index) as? HomeHeaderReusableView else {
             fatalError()
         }
-        
+        header.titleLbl.text = rowData.title
         return header
     }
     
     func sizeForSupplementaryView(ofKind elementKind: String, at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 44.0)
+    }
+}
+
+extension HomeProductSectionController: ListAdapterDataSource {
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return [ZAProductModel(products: rowData.products)]
+    }
+    
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return HomeEmbeddedProductSectionController()
+    }
+    
+    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
     }
 }

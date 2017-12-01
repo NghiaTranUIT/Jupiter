@@ -23,7 +23,7 @@ class NetworkService: NetworkServiceType {
     }
     
     class func `default`() -> NetworkService {
-        return NetworkService(fetcher: NetworkFetcher())
+        return NetworkService(fetcher: JSONFetcher())
     }
 }
 
@@ -32,7 +32,8 @@ extension NetworkService {
     func fetchHomeProduct(_ completion: ([ZAHomeScreenRowData]) -> Void) {
         let param = FetchHomeProductRequestParameter(user: ZAUser.shared)
         let request = AnyRequest(FetchHomeProductRequest(param))
-        fetcher.get(request)
+        let response = fetcher.get(request)
+        completion(response)
     }
 }
 
