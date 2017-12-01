@@ -54,7 +54,7 @@ extension ViewModelCoordinator {
         
         // Services
         let tracking = TrackingService()
-        let network = NetworkService()
+        let network = NetworkService.default()
         let deepURL = DeepURLService.default()
         
         return ViewModelCoordinator(trackingService: tracking,
