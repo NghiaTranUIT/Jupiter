@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router = Router(coordinator: coordinator)
         window = router.initMainWindow()
         
+        // Side Panel
+        router.setupSidePanel()
+        
         // Handle
         coordinator.appViewModel.appDidLaunch(with: launchOptions)
         

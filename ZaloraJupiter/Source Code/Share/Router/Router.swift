@@ -30,10 +30,15 @@ class Router {
         let controller = controllerForRouter(type: .home(nil))
         navigationController.viewControllers = [controller]
         
+        // Windown
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         return window
+    }
+    
+    func setupSidePanel() {
+        SideMenuManager.defaultManager.menuAddScreenEdgePanGesturesToPresent(toView: navigationController.view, forMenu: UIRectEdge.left)
     }
     
     // MARK: Private

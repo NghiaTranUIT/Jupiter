@@ -34,6 +34,7 @@
 		BAD7D69A1FCE5DA1006D8557 /* ZAProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6991FCE5DA1006D8557 /* ZAProduct.swift */; };
 		BAD7D69C1FCE5F2B006D8557 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D69B1FCE5F2B006D8557 /* SideMenuViewModel.swift */; };
 		BAD7D69F1FCE60AD006D8557 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D69E1FCE60AD006D8557 /* AppViewModel.swift */; };
+		BAE859CC1FD0FE3800D58A3E /* Unbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE859CB1FD0FE3800D58A3E /* Unbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		BAD7D6991FCE5DA1006D8557 /* ZAProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAProduct.swift; sourceTree = "<group>"; };
 		BAD7D69B1FCE5F2B006D8557 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		BAD7D69E1FCE60AD006D8557 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		BAE859CB1FD0FE3800D58A3E /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = ../Carthage/Build/iOS/Unbox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE859CC1FD0FE3800D58A3E /* Unbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 				BA5219D41FCD691600F835C9 /* ZaloraJupiterCore */,
 				BA5219DF1FCD691600F835C9 /* ZaloraJupiterCoreTests */,
 				BA5219D31FCD691600F835C9 /* Products */,
+				BAE859CA1FD0FE3800D58A3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,6 +266,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BAE859CA1FD0FE3800D58A3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE859CB1FD0FE3800D58A3E /* Unbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,6 +296,7 @@
 				BA5219CE1FCD691600F835C9 /* Frameworks */,
 				BA5219CF1FCD691600F835C9 /* Headers */,
 				BA5219D01FCD691600F835C9 /* Resources */,
+				BAE859CD1FD0FE4A00D58A3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -367,6 +380,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAE859CD1FD0FE4A00D58A3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Unbox.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA5219CD1FCD691600F835C9 /* Sources */ = {
@@ -542,6 +572,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = ZaloraJupiterCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -564,6 +595,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = ZaloraJupiterCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
