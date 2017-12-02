@@ -25,6 +25,14 @@ public class ZAHomeScreenRowData: Unboxable {
         return .Teaser
     }
     
+    public init(endpoint: String, title: String, products: [ZAProduct], teasers: [ZATeaser]) {
+        self.endpoint = endpoint
+        self.products = products
+        self.teasers = teasers
+        self.uuid = UUID().uuidString
+        self.title = title
+    }
+    
     public required init(unboxer: Unboxer) throws {
         self.endpoint = try unboxer.unbox(key: "endpoint")
         self.products = try unboxer.unbox(key: "products")

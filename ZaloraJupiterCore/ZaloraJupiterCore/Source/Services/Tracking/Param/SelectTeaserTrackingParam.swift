@@ -21,8 +21,4 @@ extension SelectTeaserTrackingParam {
         param[Constants.Tracking.GTM.Parameter.TeaserID] = teaser.name
         return param
     }
-    
-    func toAdjustParam() -> [String: Any]? {
-        return nil
-    }
 }

@@ -23,6 +23,11 @@
 		BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */; };
 		BA686EDD1FD24AB700A90934 /* TrackingHomeParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDC1FD24AB700A90934 /* TrackingHomeParam.swift */; };
 		BA686EDF1FD24B4600A90934 /* ZAAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */; };
+		BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */; };
+		BA7D17111FD282A6007B7C3F /* FetchHomeProductSample.json in Resources */ = {isa = PBXBuildFile; fileRef = BA7D17101FD282A5007B7C3F /* FetchHomeProductSample.json */; };
+		BA7D17141FD2831E007B7C3F /* TrackingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D17131FD2831E007B7C3F /* TrackingServiceTests.swift */; };
+		BA7D17161FD285EB007B7C3F /* Trackers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D17151FD285EB007B7C3F /* Trackers.swift */; };
+		BA7D17191FD28953007B7C3F /* Comparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D17181FD28953007B7C3F /* Comparation.swift */; };
 		BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E5F1FCD6A700091471D /* HomeViewModel.swift */; };
 		BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */; };
 		BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E661FCE5ACA0091471D /* PDVViewModel.swift */; };
@@ -38,7 +43,6 @@
 		BAA4778D1FCEA84600DDAFF5 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA4778C1FCEA84600DDAFF5 /* MenuViewModel.swift */; };
 		BAA477911FCEAA1600DDAFF5 /* ZAMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477901FCEAA1600DDAFF5 /* ZAMenuData.swift */; };
 		BABCEDEA1FD109AB00CE9F42 /* AnyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDE91FD109AB00CE9F42 /* AnyRequest.swift */; };
-		BABCEDEC1FD10E6300CE9F42 /* FetchHomeProductSample.json in Resources */ = {isa = PBXBuildFile; fileRef = BABCEDEB1FD10E6300CE9F42 /* FetchHomeProductSample.json */; };
 		BABCEDEE1FD10EC000CE9F42 /* JSONFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDED1FD10EC000CE9F42 /* JSONFetcher.swift */; };
 		BABCEDF11FD10ED500CE9F42 /* NetworkFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABCEDF01FD10ED500CE9F42 /* NetworkFetchable.swift */; };
 		BAD7D6921FCE5D5D006D8557 /* TrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */; };
@@ -91,6 +95,11 @@
 		BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLParser.swift; sourceTree = "<group>"; };
 		BA686EDC1FD24AB700A90934 /* TrackingHomeParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingHomeParam.swift; sourceTree = "<group>"; };
 		BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAAppConfig.swift; sourceTree = "<group>"; };
+		BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTrackingService.swift; sourceTree = "<group>"; };
+		BA7D17101FD282A5007B7C3F /* FetchHomeProductSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FetchHomeProductSample.json; sourceTree = "<group>"; };
+		BA7D17131FD2831E007B7C3F /* TrackingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingServiceTests.swift; sourceTree = "<group>"; };
+		BA7D17151FD285EB007B7C3F /* Trackers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackers.swift; sourceTree = "<group>"; };
+		BA7D17181FD28953007B7C3F /* Comparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparation.swift; sourceTree = "<group>"; };
 		BA971E5F1FCD6A700091471D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCoordinator.swift; sourceTree = "<group>"; };
 		BA971E661FCE5ACA0091471D /* PDVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewModel.swift; sourceTree = "<group>"; };
@@ -106,7 +115,6 @@
 		BAA4778C1FCEA84600DDAFF5 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		BAA477901FCEAA1600DDAFF5 /* ZAMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAMenuData.swift; sourceTree = "<group>"; };
 		BABCEDE91FD109AB00CE9F42 /* AnyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRequest.swift; sourceTree = "<group>"; };
-		BABCEDEB1FD10E6300CE9F42 /* FetchHomeProductSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchHomeProductSample.json; sourceTree = "<group>"; };
 		BABCEDED1FD10EC000CE9F42 /* JSONFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetcher.swift; sourceTree = "<group>"; };
 		BABCEDF01FD10ED500CE9F42 /* NetworkFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchable.swift; sourceTree = "<group>"; };
 		BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingService.swift; sourceTree = "<group>"; };
@@ -191,7 +199,10 @@
 		BA5219DF1FCD691600F835C9 /* ZaloraJupiterCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				BABCEDF21FD1110A00CE9F42 /* Request */,
+				BA7D17171FD28948007B7C3F /* Comparation */,
+				BA7D17121FD282FE007B7C3F /* Services */,
+				BA7D170F1FD281DC007B7C3F /* Resource */,
+				BA7D17091FD28162007B7C3F /* Share */,
 				BA9800271FCED021003FC0D6 /* View Models */,
 				BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */,
 				BA5219E21FCD691600F835C9 /* Info.plist */,
@@ -239,10 +250,42 @@
 			path = "App Config";
 			sourceTree = "<group>";
 		};
+		BA7D17091FD28162007B7C3F /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D17181FD28953007B7C3F /* Comparation.swift */,
+				BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */,
+				BA7D17151FD285EB007B7C3F /* Trackers.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		BA7D170F1FD281DC007B7C3F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BA7D17121FD282FE007B7C3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D17131FD2831E007B7C3F /* TrackingServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA7D17171FD28948007B7C3F /* Comparation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comparation;
+			sourceTree = "<group>";
+		};
 		BA971E5C1FCD6A4C0091471D /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				BABCEDEB1FD10E6300CE9F42 /* FetchHomeProductSample.json */,
+				BA7D17101FD282A5007B7C3F /* FetchHomeProductSample.json */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -345,13 +388,6 @@
 				BABCEDF01FD10ED500CE9F42 /* NetworkFetchable.swift */,
 			);
 			path = Fetcher;
-			sourceTree = "<group>";
-		};
-		BABCEDF21FD1110A00CE9F42 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		BAD7D6901FCE5D4E006D8557 /* Services */ = {
@@ -497,7 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABCEDEC1FD10E6300CE9F42 /* FetchHomeProductSample.json in Resources */,
+				BA7D17111FD282A6007B7C3F /* FetchHomeProductSample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +620,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7D17141FD2831E007B7C3F /* TrackingServiceTests.swift in Sources */,
+				BA7D17191FD28953007B7C3F /* Comparation.swift in Sources */,
 				BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */,
+				BA7D17161FD285EB007B7C3F /* Trackers.swift in Sources */,
+				BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */,
 				BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

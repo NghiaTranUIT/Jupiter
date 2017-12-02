@@ -25,3 +25,4 @@ class JSONFetcher: NetworkFetchable {
     }
 }
 
+

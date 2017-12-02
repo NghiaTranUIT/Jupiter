@@ -19,8 +19,4 @@ extension TrackingHomeParam {
     func toGMTParam() -> [String: Any]? {
         return defaultGTMParam()
     }
-    
-    func toAdjustParam() -> [String: Any]? {
-        return nil
-    }
 }

@@ -22,6 +22,6 @@ public class ZAUser {
     init(name: String, gender: String) {
         self.name = name
         self.gender = gender
-        customerID = UUID().uuidString
+        customerID = "customerID"
     }
 }

@@ -18,6 +18,12 @@ protocol TrackingParameter {
 
 extension TrackingParameter {
     
+    func toAdjustParam() -> [String: Any]? { return nil }
+    func toGMTParam() -> [String: Any]? { return nil }
+}
+
+extension TrackingParameter {
+    
     func defaultGTMParam() -> [String: Any] {
         return [Constants.Tracking.GTM.Key.Event: event,
                 Constants.Tracking.GTM.Parameter.CustomerID: ZAAppConfig.shared.customerID,

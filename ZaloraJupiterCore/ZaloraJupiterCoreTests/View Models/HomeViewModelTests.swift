@@ -18,15 +18,6 @@ struct StubNetworkService: NetworkServiceProtocol, NetworkServiceHome {
     }
 }
 
-struct EmptyTrackingService: TrackingServiceProtocol, TrackingServiceHome {
-    
-    func trackHomeOpen() {}
-    
-    func trackClickBrand() {}
-    
-    func trackClickCatagory() {}
-}
-
 class HomeViewModelTests: XCTestCase {
     
     override func setUp() {
@@ -40,9 +31,9 @@ class HomeViewModelTests: XCTestCase {
     }
     
     func testFetchHomeRowDataSuccess() {
-        let input = [ZAHomeScreenRowData(endpoint: "/1", param: [:], products: [], teasers: []),
-                     ZAHomeScreenRowData(endpoint: "/2", param: [:], products: [], teasers: []),
-                     ZAHomeScreenRowData(endpoint: "/3", param: [:], products: [], teasers: [])]
+        let input = [ZAHomeScreenRowData(endpoint: "/1", title: "Best Seller", products: [], teasers: []),
+                     ZAHomeScreenRowData(endpoint: "/2", title: "Best Seller", products: [], teasers: []),
+                     ZAHomeScreenRowData(endpoint: "/3", title: "Best Seller", products: [], teasers: [])]
         let network = StubNetworkService(rowDatas: input)
         let viewModel = HomeViewModel(trackingService: EmptyTrackingService(), networkService: network)
         
