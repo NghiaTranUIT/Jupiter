@@ -42,4 +42,8 @@ class HomeViewModelTests: XCTestCase {
         XCTAssertEqual(input.count, viewModel.output.homeScreenRows.count, "View model Count should have same data")
         XCTAssertEqual(input, viewModel.output.homeScreenRows, "View model Count should have same data")
     }
+    
+    func testTrackingOpenScreen() {
+        
+    }
 }

@@ -27,7 +27,7 @@ public protocol AppViewModelInput: class {
 
 public protocol AppViewModelOutput: class {
     
-    var handleURLSchemeCallback: ((DeepURLScheme) -> Void)! { get set }
+    var handleURLSchemeCallback: ((DeepURLSchemeType) -> Void)! { get set }
 }
 
 public typealias AppViewModelType = AppViewModelProtocol & AppViewModelInput & AppViewModelOutput
@@ -44,7 +44,7 @@ public class AppViewModel: AppViewModelType {
     fileprivate let urlService: DeepURLServiceType
     
     // MARK: Output
-    public var handleURLSchemeCallback: ((DeepURLScheme) -> Void)!
+    public var handleURLSchemeCallback: ((DeepURLSchemeType) -> Void)!
     
     // MARK: Init
     init(trackingService: TrackingServiceProtocol & TrackingServiceActivity,
@@ -72,7 +72,7 @@ public class AppViewModel: AppViewModelType {
     
     public func application(open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
         let scheme = urlService.handle(url.absoluteString)
-        guard scheme.type != .none else {
+        guard scheme.urlType != .none else {
             return false
         }
         
@@ -94,6 +94,6 @@ extension AppViewModel: TrackingServiceActivity {
     }
     
     public func trackOpenScreen(_ screenName: String) {
-        tracking.trackOpenScreen(screenName)
+        trackingService.trackOpenScreen(screenName)
     }
 }

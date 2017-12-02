@@ -19,8 +19,11 @@
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA5847331FCFDBCA005BB113 /* DeepURLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847321FCFDBCA005BB113 /* DeepURLService.swift */; };
 		BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */; };
-		BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */; };
+		BA5847371FCFDC53005BB113 /* DeepURLSchemeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847361FCFDC53005BB113 /* DeepURLSchemeRoute.swift */; };
 		BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */; };
+		BA58B97A1FD2D291000D00A0 /* AppViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B9791FD2D291000D00A0 /* AppViewModelTests.swift */; };
+		BA58B97C1FD2D2E3000D00A0 /* EmptyURLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B97B1FD2D2E3000D00A0 /* EmptyURLService.swift */; };
+		BA58B97F1FD2D4EA000D00A0 /* OpenHomeDeepURLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA58B97E1FD2D4EA000D00A0 /* OpenHomeDeepURLScheme.swift */; };
 		BA686EDD1FD24AB700A90934 /* TrackingHomeParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDC1FD24AB700A90934 /* TrackingHomeParam.swift */; };
 		BA686EDF1FD24B4600A90934 /* ZAAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */; };
 		BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */; };
@@ -91,8 +94,11 @@
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5847321FCFDBCA005BB113 /* DeepURLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLService.swift; sourceTree = "<group>"; };
 		BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLScheme.swift; sourceTree = "<group>"; };
-		BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLSchemeType.swift; sourceTree = "<group>"; };
+		BA5847361FCFDC53005BB113 /* DeepURLSchemeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLSchemeRoute.swift; sourceTree = "<group>"; };
 		BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLParser.swift; sourceTree = "<group>"; };
+		BA58B9791FD2D291000D00A0 /* AppViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModelTests.swift; sourceTree = "<group>"; };
+		BA58B97B1FD2D2E3000D00A0 /* EmptyURLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyURLService.swift; sourceTree = "<group>"; };
+		BA58B97E1FD2D4EA000D00A0 /* OpenHomeDeepURLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHomeDeepURLScheme.swift; sourceTree = "<group>"; };
 		BA686EDC1FD24AB700A90934 /* TrackingHomeParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingHomeParam.swift; sourceTree = "<group>"; };
 		BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAAppConfig.swift; sourceTree = "<group>"; };
 		BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTrackingService.swift; sourceTree = "<group>"; };
@@ -213,12 +219,21 @@
 		BA58472F1FCFDBAA005BB113 /* DeepURLService */ = {
 			isa = PBXGroup;
 			children = (
-				BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */,
+				BA58B97D1FD2D4DB000D00A0 /* Schemes */,
 				BA5847321FCFDBCA005BB113 /* DeepURLService.swift */,
-				BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */,
+				BA5847361FCFDC53005BB113 /* DeepURLSchemeRoute.swift */,
 				BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */,
 			);
 			path = DeepURLService;
+			sourceTree = "<group>";
+		};
+		BA58B97D1FD2D4DB000D00A0 /* Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */,
+				BA58B97E1FD2D4EA000D00A0 /* OpenHomeDeepURLScheme.swift */,
+			);
+			path = Schemes;
 			sourceTree = "<group>";
 		};
 		BA686EDA1FD24A2D00A90934 /* Tracker */ = {
@@ -256,6 +271,7 @@
 				BA7D17181FD28953007B7C3F /* Comparation.swift */,
 				BA7D170A1FD2816E007B7C3F /* EmptyTrackingService.swift */,
 				BA7D17151FD285EB007B7C3F /* Trackers.swift */,
+				BA58B97B1FD2D2E3000D00A0 /* EmptyURLService.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -353,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */,
+				BA58B9791FD2D291000D00A0 /* AppViewModelTests.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -583,7 +600,7 @@
 				BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */,
 				BAE859E31FD1030900D58A3E /* Request+Default.swift in Sources */,
 				BAA477631FCE910500DDAFF5 /* ZAHomeScreenRowData.swift in Sources */,
-				BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */,
+				BA5847371FCFDC53005BB113 /* DeepURLSchemeRoute.swift in Sources */,
 				BA2820931FD24E49004428E8 /* ZAConfig.swift in Sources */,
 				BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */,
 				BAE859D71FD1018600D58A3E /* FetchHomeProductRequest.swift in Sources */,
@@ -602,6 +619,7 @@
 				BA2820A11FD2589E004428E8 /* ZACatalog.swift in Sources */,
 				BAA4775F1FCE750F00DDAFF5 /* AdjustTracker.swift in Sources */,
 				BAA477911FCEAA1600DDAFF5 /* ZAMenuData.swift in Sources */,
+				BA58B97F1FD2D4EA000D00A0 /* OpenHomeDeepURLScheme.swift in Sources */,
 				BAE859E21FD1030900D58A3E /* Request+Alamofire.swift in Sources */,
 				BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */,
 				BA686EDD1FD24AB700A90934 /* TrackingHomeParam.swift in Sources */,
@@ -623,8 +641,10 @@
 				BA7D17141FD2831E007B7C3F /* TrackingServiceTests.swift in Sources */,
 				BA7D17191FD28953007B7C3F /* Comparation.swift in Sources */,
 				BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */,
+				BA58B97C1FD2D2E3000D00A0 /* EmptyURLService.swift in Sources */,
 				BA7D17161FD285EB007B7C3F /* Trackers.swift in Sources */,
 				BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */,
+				BA58B97A1FD2D291000D00A0 /* AppViewModelTests.swift in Sources */,
 				BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

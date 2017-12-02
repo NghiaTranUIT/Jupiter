@@ -10,7 +10,7 @@ import Foundation
 
 protocol DeepURLServiceType {
     
-    func handle(_ rawURL: String) -> DeepURLScheme
+    func handle(_ rawURL: String) -> DeepURLSchemeType
 }
 
 class DeepURLService: DeepURLServiceType {
@@ -27,7 +27,7 @@ class DeepURLService: DeepURLServiceType {
         return DeepURLService(parser: DeepURLParse())
     }
     
-    func handle(_ rawURL: String) -> DeepURLScheme {
+    func handle(_ rawURL: String) -> DeepURLSchemeType{
         return parser.parse(with: rawURL)
     }
 }

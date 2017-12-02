@@ -10,13 +10,13 @@ import Foundation
 
 protocol DeepURLParserType {
     
-    func parse(with rawURL: String) -> DeepURLScheme
+    func parse(with rawURL: String) -> DeepURLSchemeType
 }
 
 class DeepURLParse: DeepURLParserType {
     
-    func parse(with rawURL: String) -> DeepURLScheme {
+    func parse(with rawURL: String) -> DeepURLSchemeType {
         // Zalora://sg/urlc_s/m/products/?segment=women&shop=m"
-        return DeepURLScheme(country: "sg", gender: "m", type: "products", segment: "women", shop: "m", urlType: .catalog)
+        return OpenHomeDeepURLScheme(country: "sg", gender: "m", type: "products", segment: "women", shop: "m", urlType: .catalog)
     }
 }
