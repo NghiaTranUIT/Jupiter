@@ -47,10 +47,12 @@ extension TrackingService {
     public func trackHomeOpen() {
     }
     
-    public func trackClickBrand(_ brand: ZABrand) {
+    func trackSelectTeaser(_ teaser: ZATeaser) {
+        let param = SelectTeaserTrackingParam(teaser: teaser)
+        tracking(with: param)
     }
-    
-    public func trackClickCatagory(_ catalog: ZACatalog) {
+
+    func trackSelectProducr(_ product: ZAProduct) {
         
     }
 }
@@ -74,7 +76,7 @@ extension TrackingService {
     }
     
     func trackOpenScreen(_ screenName: String) {
-        let param = OpenScreenTracking(screenName: screenName)
+        let param = OpenScreenTrackingParam(screenName: screenName)
         tracking(with: param)
     }
 }

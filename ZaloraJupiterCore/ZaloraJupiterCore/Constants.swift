@@ -35,6 +35,8 @@ struct Constants {
                 static let OpenHomeScreen = "openHomeScreen"
                 static let Install = "install"
                 static let OpenScreen = "openscreen"
+                static let SelectTeaser = "selectTeaser"
+                static let SelectProduct = "selectProduct"
             }
             
             struct Parameter {
@@ -43,6 +45,8 @@ struct Constants {
                 static let Country = "country"
                 static let Gender = "gender"
                 static let ScreenName = "screenName"
+                static let TeaserID = "TeaserID"
+                static let ProductID = "ProductID"
             }
         }
         

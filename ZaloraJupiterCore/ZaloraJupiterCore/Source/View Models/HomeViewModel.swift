@@ -65,11 +65,11 @@ extension HomeViewModel {
         trackingService.trackHomeOpen()
     }
     
-    public func trackClickBrand(_ brand: ZABrand) {
-        trackingService.trackClickBrand(brand)
+    public func trackSelectTeaser(_ teaser: ZATeaser) {
+        trackingService.trackSelectTeaser(teaser)
     }
     
-    public func trackClickCatagory(_ catalog: ZACatalog) {
-        trackingService.trackClickCatagory(catalog)
+    public func trackSelectProducr(_ product: ZAProduct) {
+        trackingService.trackSelectProducr(product)
     }
 }

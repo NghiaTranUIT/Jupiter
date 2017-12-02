@@ -20,6 +20,8 @@ extension TrackingParameter {
     
     func defaultGTMParam() -> [String: Any] {
         return [Constants.Tracking.GTM.Key.Event: event,
+                Constants.Tracking.GTM.Parameter.CustomerID: ZAAppConfig.shared.customerID,
+                Constants.Tracking.GTM.Parameter.IDForAdvertising: ZAAppConfig.shared.idForAdvertised,
                 Constants.Tracking.GTM.Key.GAID: Constants.Tracking.GTM.GAID]
     }
     

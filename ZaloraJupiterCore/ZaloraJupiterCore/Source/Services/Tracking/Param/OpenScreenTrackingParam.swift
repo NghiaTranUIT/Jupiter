@@ -8,17 +8,17 @@
 
 import Foundation
 
-struct OpenScreenTracking: TrackingParameter {
+struct OpenScreenTrackingParam: TrackingParameter {
     
     // MARK: - Variable
-    var event: String { return Constants.Tracking.GTM.Event.OpenHomeScreen }
+    var event: String { return Constants.Tracking.GTM.Event.OpenScreen }
     var screenName: String
+}
+
+extension OpenScreenTrackingParam {
     
-    // MARK: - Param
     func toGMTParam() -> [String: Any]? {
         var param = defaultGTMParam()
-        param[Constants.Tracking.GTM.Parameter.CustomerID] = ZAAppConfig.shared.customerID
-        param[Constants.Tracking.GTM.Parameter.IDForAdvertising] = ZAAppConfig.shared.idForAdvertised
         param[Constants.Tracking.GTM.Parameter.ScreenName] = screenName
         return param
     }
@@ -26,7 +26,6 @@ struct OpenScreenTracking: TrackingParameter {
     func toAdjustParam() -> [String: Any]? {
         let callback: [String: Any] = [Constants.Tracking.Adjust.Param.ScreenName: screenName]
         let partner: [String: Any] = [:]
-        
         return defaultAdjustParam(callBack: callback, partner: partner)
     }
 }

@@ -8,17 +8,16 @@
 
 import Foundation
 
-struct TrackingHomeParameter: TrackingParameter {
+struct TrackingHomeParam: TrackingParameter {
 
     // MARK: - Variable
     var event: String { return Constants.Tracking.GTM.Event.OpenHomeScreen }
+}
+
+extension TrackingHomeParam {
     
-    // MARK: - Param
     func toGMTParam() -> [String: Any]? {
-        var param = defaultGTMParam()
-        param[Constants.Tracking.GTM.Parameter.CustomerID] = ZAAppConfig.shared.customerID
-        param[Constants.Tracking.GTM.Parameter.IDForAdvertising] = ZAAppConfig.shared.idForAdvertised
-        return param
+        return defaultGTMParam()
     }
     
     func toAdjustParam() -> [String: Any]? {

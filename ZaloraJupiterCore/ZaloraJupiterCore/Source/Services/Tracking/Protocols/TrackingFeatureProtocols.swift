@@ -14,11 +14,11 @@ public protocol TrackingServiceHome {
     // Open app at the first time
     func trackHomeOpen()
     
-    // User click on certain Brand
-    func trackClickBrand(_ brand: ZABrand)
+    // User click on certain Teaser
+    func trackSelectTeaser(_ teaser: ZATeaser)
     
-    // User click on certain Catagory
-    func trackClickCatagory(_ catalog: ZACatalog)
+    // User click on certain Product
+    func trackSelectProducr(_ product: ZAProduct)
 }
 
 // MARK: - Tracking Menub
