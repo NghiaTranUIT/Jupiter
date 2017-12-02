@@ -92,4 +92,8 @@ extension AppViewModel: TrackingServiceActivity {
     public func trackHideApp() {
         trackingService.trackHideApp()
     }
+    
+    public func trackOpenScreen(_ screenName: String) {
+        tracking.trackOpenScreen(screenName)
+    }
 }

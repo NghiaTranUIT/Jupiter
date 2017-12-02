@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2820931FD24E49004428E8 /* ZAConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2820921FD24E49004428E8 /* ZAConfig.swift */; };
+		BA2820961FD24F5D004428E8 /* TrackingParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2820951FD24F5D004428E8 /* TrackingParameter.swift */; };
+		BA28209B1FD253F4004428E8 /* OpenScreenTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28209A1FD253F4004428E8 /* OpenScreenTracking.swift */; };
+		BA28209D1FD25814004428E8 /* TrackerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28209C1FD25814004428E8 /* TrackerProtocol.swift */; };
+		BA28209F1FD2588F004428E8 /* ZABrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA28209E1FD2588F004428E8 /* ZABrand.swift */; };
+		BA2820A11FD2589E004428E8 /* ZACatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2820A01FD2589E004428E8 /* ZACatalog.swift */; };
 		BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */; };
 		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,12 +20,14 @@
 		BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */; };
 		BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */; };
 		BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */; };
+		BA686EDD1FD24AB700A90934 /* OpenHomeTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDC1FD24AB700A90934 /* OpenHomeTracking.swift */; };
+		BA686EDF1FD24B4600A90934 /* ZAAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */; };
 		BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E5F1FCD6A700091471D /* HomeViewModel.swift */; };
 		BA971E621FCE5AB10091471D /* ViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */; };
 		BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E661FCE5ACA0091471D /* PDVViewModel.swift */; };
 		BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E681FCE5AD20091471D /* SearchViewModel.swift */; };
 		BA971E6B1FCE5AD90091471D /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */; };
-		BA9800231FCECF16003FC0D6 /* TrackingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */; };
+		BA9800231FCECF16003FC0D6 /* TrackingFeatureProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800221FCECF16003FC0D6 /* TrackingFeatureProtocols.swift */; };
 		BA9800261FCECF8D003FC0D6 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800251FCECF8D003FC0D6 /* NetworkProtocols.swift */; };
 		BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */; };
 		BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */; };
@@ -62,6 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA2820921FD24E49004428E8 /* ZAConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAConfig.swift; sourceTree = "<group>"; };
+		BA2820941FD24F0F004428E8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BA2820951FD24F5D004428E8 /* TrackingParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingParameter.swift; sourceTree = "<group>"; };
+		BA28209A1FD253F4004428E8 /* OpenScreenTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenScreenTracking.swift; sourceTree = "<group>"; };
+		BA28209C1FD25814004428E8 /* TrackerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerProtocol.swift; sourceTree = "<group>"; };
+		BA28209E1FD2588F004428E8 /* ZABrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZABrand.swift; sourceTree = "<group>"; };
+		BA2820A01FD2589E004428E8 /* ZACatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZACatalog.swift; sourceTree = "<group>"; };
 		BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZaloraJupiterCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZaloraJupiterCore.h; sourceTree = "<group>"; };
 		BA5219D61FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,12 +87,14 @@
 		BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLScheme.swift; sourceTree = "<group>"; };
 		BA5847361FCFDC53005BB113 /* DeepURLSchemeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLSchemeType.swift; sourceTree = "<group>"; };
 		BA5847381FCFDDC2005BB113 /* DeepURLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLParser.swift; sourceTree = "<group>"; };
+		BA686EDC1FD24AB700A90934 /* OpenHomeTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHomeTracking.swift; sourceTree = "<group>"; };
+		BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZAAppConfig.swift; sourceTree = "<group>"; };
 		BA971E5F1FCD6A700091471D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BA971E611FCE5AB10091471D /* ViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelCoordinator.swift; sourceTree = "<group>"; };
 		BA971E661FCE5ACA0091471D /* PDVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDVViewModel.swift; sourceTree = "<group>"; };
 		BA971E681FCE5AD20091471D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BA971E6A1FCE5AD90091471D /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
-		BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingProtocols.swift; sourceTree = "<group>"; };
+		BA9800221FCECF16003FC0D6 /* TrackingFeatureProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingFeatureProtocols.swift; sourceTree = "<group>"; };
 		BA9800251FCECF8D003FC0D6 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
 		BA9800281FCED03B003FC0D6 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTMTracker.swift; sourceTree = "<group>"; };
@@ -130,6 +147,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA2820911FD24E3B004428E8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BA2820921FD24E49004428E8 /* ZAConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		BA5219C81FCD691600F835C9 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +208,34 @@
 			path = DeepURLService;
 			sourceTree = "<group>";
 		};
+		BA686EDA1FD24A2D00A90934 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */,
+				BAA4775E1FCE750F00DDAFF5 /* AdjustTracker.swift */,
+				BA28209C1FD25814004428E8 /* TrackerProtocol.swift */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		BA686EDB1FD24A3700A90934 /* Kind */ = {
+			isa = PBXGroup;
+			children = (
+				BA686EDC1FD24AB700A90934 /* OpenHomeTracking.swift */,
+				BA28209A1FD253F4004428E8 /* OpenScreenTracking.swift */,
+			);
+			path = Kind;
+			sourceTree = "<group>";
+		};
+		BA686EE01FD24BC000A90934 /* App Config */ = {
+			isa = PBXGroup;
+			children = (
+				BA2820911FD24E3B004428E8 /* Config */,
+				BA686EDE1FD24B4600A90934 /* ZAAppConfig.swift */,
+			);
+			path = "App Config";
+			sourceTree = "<group>";
+		};
 		BA971E5C1FCD6A4C0091471D /* Share */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +247,7 @@
 		BA971E5D1FCD6A530091471D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BA686EE01FD24BC000A90934 /* App Config */,
 				BAD7D6961FCE5D7A006D8557 /* Model */,
 				BAD7D6901FCE5D4E006D8557 /* Services */,
 				BA971E631FCE5AB60091471D /* Coordinator */,
@@ -235,7 +289,8 @@
 		BA9800211FCECF00003FC0D6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				BA9800221FCECF16003FC0D6 /* TrackingProtocols.swift */,
+				BA9800221FCECF16003FC0D6 /* TrackingFeatureProtocols.swift */,
+				BA2820951FD24F5D004428E8 /* TrackingParameter.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -259,10 +314,10 @@
 		BAA4775B1FCE745000DDAFF5 /* Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				BA686EDB1FD24A3700A90934 /* Kind */,
+				BA686EDA1FD24A2D00A90934 /* Tracker */,
 				BA9800211FCECF00003FC0D6 /* Protocols */,
 				BAD7D6911FCE5D5D006D8557 /* TrackingService.swift */,
-				BAA477591FCE744D00DDAFF5 /* GTMTracker.swift */,
-				BAA4775E1FCE750F00DDAFF5 /* AdjustTracker.swift */,
 			);
 			path = Tracking;
 			sourceTree = "<group>";
@@ -315,6 +370,8 @@
 				BAA477641FCE921300DDAFF5 /* ZATeaser.swift */,
 				BAA477901FCEAA1600DDAFF5 /* ZAMenuData.swift */,
 				BAE859DA1FD101E000D58A3E /* ZAUser.swift */,
+				BA28209E1FD2588F004428E8 /* ZABrand.swift */,
+				BA2820A01FD2589E004428E8 /* ZACatalog.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,6 +379,7 @@
 		BAE859CA1FD0FE3800D58A3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA2820941FD24F0F004428E8 /* AdSupport.framework */,
 				BAE859D21FD1012700D58A3E /* Alamofire.framework */,
 				BAE859CB1FD0FE3800D58A3E /* Unbox.framework */,
 			);
@@ -473,10 +531,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5847391FCFDDC2005BB113 /* DeepURLParser.swift in Sources */,
-				BA9800231FCECF16003FC0D6 /* TrackingProtocols.swift in Sources */,
+				BA9800231FCECF16003FC0D6 /* TrackingFeatureProtocols.swift in Sources */,
 				BABCEDF11FD10ED500CE9F42 /* NetworkFetchable.swift in Sources */,
 				BA971E601FCD6A700091471D /* HomeViewModel.swift in Sources */,
 				BA971E691FCE5AD20091471D /* SearchViewModel.swift in Sources */,
+				BA686EDF1FD24B4600A90934 /* ZAAppConfig.swift in Sources */,
 				BAD7D69A1FCE5DA1006D8557 /* ZAProduct.swift in Sources */,
 				BAE859DD1FD1024100D58A3E /* Constants.swift in Sources */,
 				BAE859E11FD1030900D58A3E /* Request+Error.swift in Sources */,
@@ -485,20 +544,27 @@
 				BAE859E31FD1030900D58A3E /* Request+Default.swift in Sources */,
 				BAA477631FCE910500DDAFF5 /* ZAHomeScreenRowData.swift in Sources */,
 				BA5847371FCFDC53005BB113 /* DeepURLSchemeType.swift in Sources */,
+				BA2820931FD24E49004428E8 /* ZAConfig.swift in Sources */,
 				BA971E671FCE5ACA0091471D /* PDVViewModel.swift in Sources */,
 				BAE859D71FD1018600D58A3E /* FetchHomeProductRequest.swift in Sources */,
 				BAE859CF1FD0FFB500D58A3E /* ZaloraAPIFetcher.swift in Sources */,
+				BA2820961FD24F5D004428E8 /* TrackingParameter.swift in Sources */,
 				BAD7D6921FCE5D5D006D8557 /* TrackingService.swift in Sources */,
 				BAE859D11FD1007C00D58A3E /* Request.swift in Sources */,
+				BA28209D1FD25814004428E8 /* TrackerProtocol.swift in Sources */,
+				BA28209F1FD2588F004428E8 /* ZABrand.swift in Sources */,
 				BA5847331FCFDBCA005BB113 /* DeepURLService.swift in Sources */,
 				BAA477651FCE921300DDAFF5 /* ZATeaser.swift in Sources */,
 				BABCEDEE1FD10EC000CE9F42 /* JSONFetcher.swift in Sources */,
+				BA28209B1FD253F4004428E8 /* OpenScreenTracking.swift in Sources */,
 				BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */,
 				BABCEDEA1FD109AB00CE9F42 /* AnyRequest.swift in Sources */,
+				BA2820A11FD2589E004428E8 /* ZACatalog.swift in Sources */,
 				BAA4775F1FCE750F00DDAFF5 /* AdjustTracker.swift in Sources */,
 				BAA477911FCEAA1600DDAFF5 /* ZAMenuData.swift in Sources */,
 				BAE859E21FD1030900D58A3E /* Request+Alamofire.swift in Sources */,
 				BAA4775A1FCE744D00DDAFF5 /* GTMTracker.swift in Sources */,
+				BA686EDD1FD24AB700A90934 /* OpenHomeTracking.swift in Sources */,
 				BAE859D51FD1015700D58A3E /* Parameter.swift in Sources */,
 				BAE859DB1FD101E000D58A3E /* ZAUser.swift in Sources */,
 				BAD7D6981FCE5D8C006D8557 /* ZABaseModel.swift in Sources */,

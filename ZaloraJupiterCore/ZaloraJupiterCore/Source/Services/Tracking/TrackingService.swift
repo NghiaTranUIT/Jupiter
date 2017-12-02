@@ -8,16 +8,18 @@
 
 import Foundation
 
-protocol TrackingServiceProtocol {}
+protocol TrackingServiceProtocol {
+    func tracking(with param: TrackingParameter)
+}
 
 typealias TrackingServiceType = TrackingServiceProtocol & TrackingServiceHome & TrackingServiceMenu & TrackingServiceActivity
 
 class TrackingService: TrackingServiceType {
     
-    private let gtm: GTMTrackerType
-    private let adjust: AdjustTrackerType
+    private let gtm: TrackerProtocol
+    private let adjust: TrackerProtocol
     
-    init(gtm: GTMTrackerType, adjust: AdjustTrackerType) {
+    init(gtm: TrackerProtocol, adjust: TrackerProtocol) {
         self.gtm = gtm
         self.adjust = adjust
     }
@@ -25,30 +27,39 @@ class TrackingService: TrackingServiceType {
     convenience init() {
         self.init(gtm: GTMTracker(), adjust: AdjustTracker())
     }
+    
+    func tracking(with param: TrackingParameter) {
+        
+        // GTM Tracking if need
+        if let gtmParam = param.toGMTParam() {
+            gtm.tracking(with: gtmParam)
+        }
+        
+        // Adjust Tracking if need
+        if let adjustParam = param.toAdjustParam() {
+            adjust.tracking(with: adjustParam)
+        }
+    }
 }
 
 extension TrackingService {
     
     public func trackHomeOpen() {
-        gtm.trackHomeOpen()
     }
     
-    public func trackClickBrand() {
-        gtm.trackClickBrand()
+    public func trackClickBrand(_ brand: ZABrand) {
     }
     
-    public func trackClickCatagory() {
-        gtm.trackClickCatagory()
+    public func trackClickCatagory(_ catalog: ZACatalog) {
+        
     }
 }
 
 extension TrackingService {
     func trackSelectButton() {
-        gtm.trackSelectButton()
     }
     
     func trackLogout() {
-        gtm.trackLogout()
     }
 }
 
@@ -60,5 +71,10 @@ extension TrackingService {
     
     func trackOpenApp() {
         
+    }
+    
+    func trackOpenScreen(_ screenName: String) {
+        let param = OpenScreenTracking(screenName: screenName)
+        tracking(with: param)
     }
 }
