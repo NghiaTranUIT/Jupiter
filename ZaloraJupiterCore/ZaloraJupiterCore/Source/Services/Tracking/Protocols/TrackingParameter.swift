@@ -13,13 +13,13 @@ protocol TrackingParameter {
     var event: String { get }
     
     func toAdjustParam() -> [String: Any]?
-    func toGMTParam() -> [String: Any]?
+    func toGTMParam() -> [String: Any]?
 }
 
 extension TrackingParameter {
     
     func toAdjustParam() -> [String: Any]? { return nil }
-    func toGMTParam() -> [String: Any]? { return nil }
+    func toGTMParam() -> [String: Any]? { return nil }
 }
 
 extension TrackingParameter {

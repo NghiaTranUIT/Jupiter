@@ -16,7 +16,7 @@ struct SelectTeaserTrackingParam: TrackingParameter {
 
 extension SelectTeaserTrackingParam {
     
-    func toGMTParam() -> [String: Any]? {
+    func toGTMParam() -> [String: Any]? {
         var param = defaultGTMParam()
         param[Constants.Tracking.GTM.Parameter.TeaserID] = teaser.name
         return param

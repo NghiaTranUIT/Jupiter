@@ -31,7 +31,7 @@ class TrackingService: TrackingServiceType {
     func tracking(with param: TrackingParameter) {
         
         // GTM Tracking if need
-        if let gtmParam = param.toGMTParam() {
+        if let gtmParam = param.toGTMParam() {
             gtm.tracking(with: gtmParam)
         }
         

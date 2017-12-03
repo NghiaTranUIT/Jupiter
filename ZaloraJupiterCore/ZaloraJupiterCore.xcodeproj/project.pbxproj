@@ -17,6 +17,10 @@
 		BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */; };
 		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA565EFE1FD3B57F00A88BFB /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA565EFD1FD3B57F00A88BFB /* NetworkServiceTests.swift */; };
+		BA565F011FD3B7AE00A88BFB /* TrackingParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA565F001FD3B7AE00A88BFB /* TrackingParameterTests.swift */; };
+		BA565F041FD3BB4B00A88BFB /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA565F031FD3BB4B00A88BFB /* NetworkRequestTests.swift */; };
+		BA565F051FD3BDBF00A88BFB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE859D21FD1012700D58A3E /* Alamofire.framework */; };
 		BA5847331FCFDBCA005BB113 /* DeepURLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847321FCFDBCA005BB113 /* DeepURLService.swift */; };
 		BA5847351FCFDC15005BB113 /* DeepURLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */; };
 		BA5847371FCFDC53005BB113 /* DeepURLSchemeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5847361FCFDC53005BB113 /* DeepURLSchemeRoute.swift */; };
@@ -92,6 +96,9 @@
 		BA5219DB1FCD691600F835C9 /* ZaloraJupiterCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloraJupiterCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraJupiterCoreTests.swift; sourceTree = "<group>"; };
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA565EFD1FD3B57F00A88BFB /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		BA565F001FD3B7AE00A88BFB /* TrackingParameterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingParameterTests.swift; sourceTree = "<group>"; };
+		BA565F031FD3BB4B00A88BFB /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 		BA5847321FCFDBCA005BB113 /* DeepURLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLService.swift; sourceTree = "<group>"; };
 		BA5847341FCFDC15005BB113 /* DeepURLScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLScheme.swift; sourceTree = "<group>"; };
 		BA5847361FCFDC53005BB113 /* DeepURLSchemeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepURLSchemeRoute.swift; sourceTree = "<group>"; };
@@ -157,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */,
+				BA565F051FD3BDBF00A88BFB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +215,30 @@
 			children = (
 				BA7D17171FD28948007B7C3F /* Comparation */,
 				BA7D17121FD282FE007B7C3F /* Services */,
-				BA7D170F1FD281DC007B7C3F /* Resource */,
 				BA7D17091FD28162007B7C3F /* Share */,
 				BA9800271FCED021003FC0D6 /* View Models */,
 				BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */,
 				BA5219E21FCD691600F835C9 /* Info.plist */,
 			);
 			path = ZaloraJupiterCoreTests;
+			sourceTree = "<group>";
+		};
+		BA565EFF1FD3B78900A88BFB /* Tracking  */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D17131FD2831E007B7C3F /* TrackingServiceTests.swift */,
+				BA565F001FD3B7AE00A88BFB /* TrackingParameterTests.swift */,
+			);
+			path = "Tracking ";
+			sourceTree = "<group>";
+		};
+		BA565F021FD3BB1A00A88BFB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA565EFD1FD3B57F00A88BFB /* NetworkServiceTests.swift */,
+				BA565F031FD3BB4B00A88BFB /* NetworkRequestTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		BA58472F1FCFDBAA005BB113 /* DeepURLService */ = {
@@ -276,17 +301,11 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
-		BA7D170F1FD281DC007B7C3F /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		BA7D17121FD282FE007B7C3F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BA7D17131FD2831E007B7C3F /* TrackingServiceTests.swift */,
+				BA565F021FD3BB1A00A88BFB /* Network */,
+				BA565EFF1FD3B78900A88BFB /* Tracking  */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -495,6 +514,7 @@
 				BA5219D71FCD691600F835C9 /* Sources */,
 				BA5219D81FCD691600F835C9 /* Frameworks */,
 				BA5219D91FCD691600F835C9 /* Resources */,
+				BA565F061FD3BE8C00A88BFB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -564,6 +584,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BA565F061FD3BE8C00A88BFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		BAE859CD1FD0FE4A00D58A3E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -640,11 +674,14 @@
 			files = (
 				BA7D17141FD2831E007B7C3F /* TrackingServiceTests.swift in Sources */,
 				BA7D17191FD28953007B7C3F /* Comparation.swift in Sources */,
+				BA565F011FD3B7AE00A88BFB /* TrackingParameterTests.swift in Sources */,
 				BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */,
 				BA58B97C1FD2D2E3000D00A0 /* EmptyURLService.swift in Sources */,
 				BA7D17161FD285EB007B7C3F /* Trackers.swift in Sources */,
 				BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */,
 				BA58B97A1FD2D291000D00A0 /* AppViewModelTests.swift in Sources */,
+				BA565EFE1FD3B57F00A88BFB /* NetworkServiceTests.swift in Sources */,
+				BA565F041FD3BB4B00A88BFB /* NetworkRequestTests.swift in Sources */,
 				BA9800291FCED03B003FC0D6 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,6 +860,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = ZaloraJupiterCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fe.ZaloraJupiterCoreTests;
@@ -837,6 +875,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = ZaloraJupiterCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fe.ZaloraJupiterCoreTests;

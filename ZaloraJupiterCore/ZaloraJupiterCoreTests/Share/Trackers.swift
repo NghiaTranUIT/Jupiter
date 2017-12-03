@@ -9,6 +9,7 @@
 import Foundation
 @testable import ZaloraJupiterCore
 
+
 class SpyGTMTracker: TrackerProtocol {
     
     var isCallTracking = false
@@ -33,7 +34,7 @@ class SpyAdjustTracker: TrackerProtocol {
 
 struct OnlyGTMParam: TrackingParameter {
     var event: String { return "OnlyGTMParam" }
-    func toGMTParam() -> [String : Any]? {
+    func toGTMParam() -> [String : Any]? {
         return [:]
     }
 }
@@ -52,7 +53,7 @@ struct GTMAndAdjustParam: TrackingParameter {
         return [:]
     }
     
-    func toGMTParam() -> [String : Any]? {
+    func toGTMParam() -> [String : Any]? {
         return [:]
     }
 }

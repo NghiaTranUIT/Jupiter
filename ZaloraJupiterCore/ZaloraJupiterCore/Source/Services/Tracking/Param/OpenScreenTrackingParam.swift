@@ -17,7 +17,7 @@ struct OpenScreenTrackingParam: TrackingParameter {
 
 extension OpenScreenTrackingParam {
     
-    func toGMTParam() -> [String: Any]? {
+    func toGTMParam() -> [String: Any]? {
         var param = defaultGTMParam()
         param[Constants.Tracking.GTM.Parameter.ScreenName] = screenName
         return param

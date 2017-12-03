@@ -16,7 +16,7 @@ struct TrackingHomeParam: TrackingParameter {
 
 extension TrackingHomeParam {
     
-    func toGMTParam() -> [String: Any]? {
+    func toGTMParam() -> [String: Any]? {
         return defaultGTMParam()
     }
 }

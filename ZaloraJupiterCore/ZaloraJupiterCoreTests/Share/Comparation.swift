@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-func XCTAssertEqualDictionaries<S, T: Equatable>(first: [S:T], _ second: [S:T]) {
-    XCTAssert(first == second)
+func XCTAssertEqualDictionaries<S, T: Equatable>(_ first: [S:T], _ second: [S:T], _ message: String = "Error") {
+    XCTAssertTrue(first == second, message)
 }
 

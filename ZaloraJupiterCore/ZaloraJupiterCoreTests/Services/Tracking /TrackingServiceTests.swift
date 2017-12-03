@@ -84,7 +84,7 @@ class TrackingServiceTests: XCTestCase {
         service.trackSelectTeaser(selectedTeaser)
         
         // Then
-        XCTAssertEqualDictionaries(first: expected, gtm.sentParam as! [String: String])
+        XCTAssertEqualDictionaries(expected, gtm.sentParam as! [String: String])
         XCTAssertTrue(gtm.isCallTracking, "GTM Tracker should be call")
         XCTAssertFalse(adjust.isCallTracking,"Adjust Tracker shouldn't be call")
     }
@@ -108,7 +108,7 @@ class TrackingServiceTests: XCTestCase {
         service.trackOpenScreen("ProfileScreen")
         
         // Then
-        XCTAssertEqualDictionaries(first: expectedGTM, gtm.sentParam as! [String: String])
+        XCTAssertEqualDictionaries(expectedGTM, gtm.sentParam as! [String: String])
         XCTAssertEqual(expectedAdjust.keys, adjust.sentParam.keys, "")
 //        XCTAssertEqual(expectedAdjust.values, adjust.sentParam.values, "")
         XCTAssertTrue(gtm.isCallTracking, "GTM Tracker should be called")

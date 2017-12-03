@@ -14,7 +14,7 @@ struct Constants {
     struct ZaloraAPI {
         
         static let BaseProductionURL = "https://api.zalora.sg/v1"
-        static let FetchHomeProduct = "oauth/v2/authorize"
+        static let FetchHomeProduct = "/home"
     }
     
     // MARK: - Tracking

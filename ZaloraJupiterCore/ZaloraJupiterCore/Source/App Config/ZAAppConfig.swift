@@ -59,6 +59,6 @@ extension ZAAppConfig: ConfigTracking {
     }
     
     var idForAdvertised: String {
-        return ASIdentifierManager.shared().advertisingIdentifier.uuidString
+        return "2D92592A-BF42-441A-A995-F531AA0C791B"
     }
 }
