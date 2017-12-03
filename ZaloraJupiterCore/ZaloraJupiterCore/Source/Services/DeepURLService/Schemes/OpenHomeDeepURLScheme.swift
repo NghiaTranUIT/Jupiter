@@ -9,7 +9,6 @@
 import Foundation
 
 // Zalora://sg/urlc_s/m/products/?segment=women&shop=m
-
 public struct OpenHomeDeepURLScheme: DeepURLSchemeType {
     
     public let country: String
@@ -19,3 +18,5 @@ public struct OpenHomeDeepURLScheme: DeepURLSchemeType {
     public let shop: String
     public let urlType: DeepURLSchemeRoute
 }
+
+

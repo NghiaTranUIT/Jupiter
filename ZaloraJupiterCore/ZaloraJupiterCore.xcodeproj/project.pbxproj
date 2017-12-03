@@ -15,7 +15,6 @@
 		BA2820A11FD2589E004428E8 /* ZACatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2820A01FD2589E004428E8 /* ZACatalog.swift */; };
 		BA2820A31FD25BC7004428E8 /* SelectTeaserTrackingParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2820A21FD25BC7004428E8 /* SelectTeaserTrackingParam.swift */; };
 		BA5219DC1FCD691600F835C9 /* ZaloraJupiterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5219D21FCD691600F835C9 /* ZaloraJupiterCore.framework */; };
-		BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */; };
 		BA5219E31FCD691600F835C9 /* ZaloraJupiterCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA565EFE1FD3B57F00A88BFB /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA565EFD1FD3B57F00A88BFB /* NetworkServiceTests.swift */; };
 		BA565F011FD3B7AE00A88BFB /* TrackingParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA565F001FD3B7AE00A88BFB /* TrackingParameterTests.swift */; };
@@ -94,7 +93,6 @@
 		BA5219D51FCD691600F835C9 /* ZaloraJupiterCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZaloraJupiterCore.h; sourceTree = "<group>"; };
 		BA5219D61FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5219DB1FCD691600F835C9 /* ZaloraJupiterCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaloraJupiterCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloraJupiterCoreTests.swift; sourceTree = "<group>"; };
 		BA5219E21FCD691600F835C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA565EFD1FD3B57F00A88BFB /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		BA565F001FD3B7AE00A88BFB /* TrackingParameterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingParameterTests.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				BA7D17121FD282FE007B7C3F /* Services */,
 				BA7D17091FD28162007B7C3F /* Share */,
 				BA9800271FCED021003FC0D6 /* View Models */,
-				BA5219E01FCD691600F835C9 /* ZaloraJupiterCoreTests.swift */,
 				BA5219E21FCD691600F835C9 /* Info.plist */,
 			);
 			path = ZaloraJupiterCoreTests;
@@ -675,7 +672,6 @@
 				BA7D17141FD2831E007B7C3F /* TrackingServiceTests.swift in Sources */,
 				BA7D17191FD28953007B7C3F /* Comparation.swift in Sources */,
 				BA565F011FD3B7AE00A88BFB /* TrackingParameterTests.swift in Sources */,
-				BA5219E11FCD691600F835C9 /* ZaloraJupiterCoreTests.swift in Sources */,
 				BA58B97C1FD2D2E3000D00A0 /* EmptyURLService.swift in Sources */,
 				BA7D17161FD285EB007B7C3F /* Trackers.swift in Sources */,
 				BA7D170B1FD2816E007B7C3F /* EmptyTrackingService.swift in Sources */,

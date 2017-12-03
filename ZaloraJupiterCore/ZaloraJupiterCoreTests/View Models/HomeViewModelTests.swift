@@ -31,19 +31,19 @@ class HomeViewModelTests: XCTestCase {
     }
     
     func testFetchHomeRowDataSuccess() {
+        
+        // Given
         let input = [ZAHomeScreenRowData(endpoint: "/1", title: "Best Seller", products: [], teasers: []),
                      ZAHomeScreenRowData(endpoint: "/2", title: "Best Seller", products: [], teasers: []),
                      ZAHomeScreenRowData(endpoint: "/3", title: "Best Seller", products: [], teasers: [])]
         let network = StubNetworkService(rowDatas: input)
         let viewModel = HomeViewModel(trackingService: EmptyTrackingService(), networkService: network)
         
+        // When
         viewModel.input.loadProduct {}
         
+        // Then
         XCTAssertEqual(input.count, viewModel.output.homeScreenRows.count, "View model Count should have same data")
         XCTAssertEqual(input, viewModel.output.homeScreenRows, "View model Count should have same data")
-    }
-    
-    func testTrackingOpenScreen() {
-        
     }
 }
