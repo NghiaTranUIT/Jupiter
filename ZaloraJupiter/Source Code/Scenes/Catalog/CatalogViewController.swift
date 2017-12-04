@@ -13,7 +13,7 @@ class CatalogViewController: UIViewController {
 
     // MARK: Variable
     var viewModel: CatalogViewModelType!
-    var scheme: DeepURLScheme?
+    var scheme: DeepURLSchemeType?
     
     // MARK: View Cycle
     override func viewDidLoad() {
