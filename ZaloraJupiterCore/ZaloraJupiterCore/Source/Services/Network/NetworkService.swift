@@ -30,8 +30,13 @@ class NetworkService: NetworkServiceType {
 extension NetworkService {
     
     func fetchHomeProduct(_ completion: ([ZAHomeScreenRowData]) -> Void) {
+        //
         let param = FetchHomeProductRequestParameter(user: ZAUser.shared)
+        
+        //
         let request = AnyRequest(FetchHomeProductRequest(param))
+        
+        //
         let response = fetcher.get(request)
         completion(response)
     }

@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     
     // MARK: Variable
     var viewModel: HomeViewModelType!
+    
     fileprivate lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()

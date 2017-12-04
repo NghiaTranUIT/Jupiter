@@ -29,22 +29,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router.setupSidePanel()
         
         // Handle
-        coordinator.appViewModel.appDidLaunch(with: launchOptions)
+        coordinator.appViewModel.input.appDidLaunch(with: launchOptions)
         
         return true
     }
 
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        coordinator.appViewModel.applicationDidEnterBackground()
+        coordinator.appViewModel.input.applicationDidEnterBackground()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        coordinator.appViewModel.applicationWillEnterForeground()
+        coordinator.appViewModel.input.applicationWillEnterForeground()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        coordinator.appViewModel.applicationDidBecomeActive()
+        coordinator.appViewModel.input.applicationDidBecomeActive()
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
